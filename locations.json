@@ -1,0 +1,3008 @@
+{
+ "Adana": {
+  "Kozan": [
+   "Çanaklı",
+   "Şevkiye"
+  ],
+  "Sarıçam": [
+   "Balcalı",
+   "Ertuğrulgazi",
+   "Gültepe",
+   "Mehmet Akif Ersoy",
+   "Osmangazi",
+   "Çarkıpare",
+   "Çınarlı",
+   "İstiklal"
+  ],
+  "Seyhan": [
+   "2000 Evler",
+   "Akkapı",
+   "Cemalpaşa",
+   "Gürselpaşa",
+   "Havuzlubahçe",
+   "Kurtuluş",
+   "Mithatpaşa",
+   "Pınar",
+   "Reşatbey",
+   "Sümer",
+   "Tellidere",
+   "Yenibaraj",
+   "Yeşilyurt",
+   "Ziyapaşa"
+  ],
+  "Yumurtalık": [
+   "Akyuva"
+  ],
+  "Yüreğir": [
+   "Kışla"
+  ],
+  "Çukurova": [
+   "Belediye Evleri",
+   "Beyazevler",
+   "Güzelyalı",
+   "Huzurevleri",
+   "Karslılar",
+   "Mahfesığmaz",
+   "Toros",
+   "Yurt",
+   "Yüzüncüyıl",
+   "Şambayadı"
+  ]
+ },
+ "Adıyaman": {
+  "Merkez": [
+   "Alitaşı",
+   "Altınşehir",
+   "Turgut Reis",
+   "Yunus Emre"
+  ]
+ },
+ "Afyonkarahisar": {
+  "Merkez": [
+   "Cumhuriyet",
+   "Dumlupınar",
+   "Erenler",
+   "Esentepe",
+   "Hasan Karaağaç",
+   "Örnekevler"
+  ],
+  "Çay": [
+   "Ali Kaleli"
+  ]
+ },
+ "Aksaray": {
+  "Merkez": [
+   "Aratol İstiklal",
+   "Hacılar Harmanı",
+   "Tacin",
+   "Taşpazar",
+   "Şeyh Hamit"
+  ]
+ },
+ "Amasya": {
+  "Merkez": [
+   "Akbilek",
+   "Hacılar Meydanı",
+   "Şeyhcui"
+  ],
+  "Merzifon": [
+   "Harmanlar",
+   "Mahsen",
+   "Sofular"
+  ]
+ },
+ "Ankara": {
+  "Akyurt": [
+   "Beyazıt",
+   "Yeşiltepe"
+  ],
+  "Altındağ": [
+   "Aydınlıkevler",
+   "Baraj",
+   "Beşikkaya",
+   "Gültepe",
+   "Güneşevler",
+   "Hacettepe",
+   "Karapürçek",
+   "Ulubey",
+   "Zübeyde Hanım",
+   "Örnek"
+  ],
+  "Elmadağ": [
+   "Kemalpaşa"
+  ],
+  "Etimesgut": [
+   "30 Ağustos",
+   "Ahi Mesut",
+   "Alsancak",
+   "Altay",
+   "Atayurt",
+   "Bağlıca",
+   "Devlet",
+   "Elvan",
+   "Erler",
+   "Eryaman",
+   "Etiler",
+   "Fatih Sultan",
+   "Göksu",
+   "Kazım Karabekir",
+   "Süvari",
+   "Topçu",
+   "Tunahan",
+   "Turkuaz",
+   "Yapracık",
+   "Yavuz Selim",
+   "Yeni Bağlıca",
+   "Yeşilova",
+   "İstasyon",
+   "Şehit Osman Avcı",
+   "Şeyh Şamil"
+  ],
+  "Gölbaşı": [
+   "Bahçelievler",
+   "Ballıkpınar",
+   "Eymir",
+   "Hacılar",
+   "Karşıyaka",
+   "Kızılcaşar",
+   "Taşpınar",
+   "Tulumtaş",
+   "İncek",
+   "Şafak"
+  ],
+  "Keçiören": [
+   "19 Mayıs",
+   "Adnan Menderes",
+   "Atapark",
+   "Ayvalı",
+   "Aşağı Eğlence",
+   "Basınevleri",
+   "Bağlarbaşı",
+   "Emrah",
+   "Esertepe",
+   "Etlik",
+   "Hasköy",
+   "Kalaba",
+   "Kamil Ocak",
+   "Kanuni",
+   "Karargahtepe",
+   "Kavacık Subayevleri",
+   "Kuşcağız",
+   "Osmangazi",
+   "Ovacık",
+   "Pınarbaşı",
+   "Sancaktepe",
+   "Tepebaşı",
+   "Ufuktepe",
+   "Uyanış",
+   "Yakacık",
+   "Yayla",
+   "Yeşiltepe",
+   "Yükseltepe",
+   "Çaldıran",
+   "Çiçekli",
+   "İncirli",
+   "Şefkat",
+   "Şehit Kubilay",
+   "Şenlik"
+  ],
+  "Mamak": [
+   "Abidinpaşa",
+   "Akdere",
+   "Akşemsettin",
+   "Altıağaç",
+   "Aşık Veysel",
+   "Bahçeleriçi",
+   "Bahçelerüstü",
+   "Balkiraz",
+   "Başak",
+   "Boğaziçi",
+   "Cengizhan",
+   "Demirlibahçe",
+   "Diriliş",
+   "Durali Alıç",
+   "Ege",
+   "Fahri Korutürk",
+   "General Zeki Doğan",
+   "Gülveren",
+   "Hürel",
+   "Hüseyingazi",
+   "Karaağaç",
+   "Kayaş",
+   "Kazım Orbay",
+   "Kutlu",
+   "Küçük Kayaş",
+   "Mehtap",
+   "Misket",
+   "Peyami Safa",
+   "Saimekadın",
+   "Tuzluçayır",
+   "Türközü",
+   "Yeşilbayır",
+   "Zirvekent",
+   "Çağlayan",
+   "Şafaktepe",
+   "Şahintepe",
+   "Şehit Cengiz Topel",
+   "Şirintepe"
+  ],
+  "Polatlı": [
+   "Cumhuriyet",
+   "Fatih",
+   "Mehmet Akif",
+   "Şehitlik",
+   "Şentepe"
+  ],
+  "Pursaklar": [
+   "Ayyıldız",
+   "Fatih",
+   "Merkez",
+   "Mimar Sinan",
+   "Saray Cumhuriyet",
+   "Yunus Emre"
+  ],
+  "Sincan": [
+   "Alcı",
+   "Andiçen",
+   "Cumhuriyet",
+   "Ertuğrulgazi",
+   "Fevzi Çakmak",
+   "Gazi Osmanpaşa",
+   "Gökçek",
+   "Hürriyet",
+   "Malazgirt",
+   "Malıköy",
+   "Mareşal Çakmak",
+   "Menderes",
+   "Mevlana",
+   "Mustafa Kemal",
+   "Osmanlı",
+   "Plevne",
+   "Pınarbaşı",
+   "Saraycık",
+   "Tandoğan",
+   "Törekent",
+   "Ulubatlı Hasan",
+   "Çoğlu"
+  ],
+  "Yenimahalle": [
+   "Anadolu",
+   "Aşağı Yahyalar",
+   "Barış",
+   "Barıştepe",
+   "Batı Sitesi",
+   "Beştepe",
+   "Burç",
+   "Demetevler",
+   "Demetgül",
+   "Demetlale",
+   "Emniyet",
+   "Ergazi",
+   "Ergenekon",
+   "Gayret",
+   "Gazi",
+   "Işınlar",
+   "Kaletepe",
+   "Kardelen",
+   "Karşıyaka",
+   "Kentkoop",
+   "Mehmet Akif Ersoy",
+   "Ostim",
+   "Ragıp Tüzün",
+   "Serhat",
+   "Susuz",
+   "Tepealtı",
+   "Turgut Özal",
+   "Uğur Mumcu",
+   "Varlık",
+   "Yeni Batı",
+   "Yeniçağ",
+   "Yeşilevler",
+   "Yunus Emre",
+   "Yuvaköy",
+   "Çarşı",
+   "Özevler",
+   "İlkyerleşim",
+   "İnönü"
+  ],
+  "Çankaya": [
+   "100. Yıl",
+   "Akpınar",
+   "Alacaatlı",
+   "Arka Topraklık",
+   "Ata",
+   "Aydınlar",
+   "Ayrancı",
+   "Aziziye",
+   "Aşağı Öveçler",
+   "Aşıkpaşa",
+   "Bademlidere",
+   "Bahçelievler",
+   "Balgat",
+   "Barbaros",
+   "Bayraktar",
+   "Beytepe",
+   "Birlik",
+   "Büyükesat",
+   "Cebeci",
+   "Cevizlidere",
+   "Dodurga",
+   "Doğuş",
+   "Dumlupınar",
+   "Ehlibeyt",
+   "Emek",
+   "Ertuğrulgazi",
+   "Erzurum",
+   "Esatoğlu",
+   "Eti",
+   "Fakülteler",
+   "Gaziosmanpaşa",
+   "Gökkuşağı",
+   "Güvenevler",
+   "Güzeltepe",
+   "Harbiye",
+   "Hilal",
+   "Huzur",
+   "Karapınar",
+   "Kavaklıdere",
+   "Kazım Özalp",
+   "Keklik Pınarı",
+   "Kocatepe",
+   "Konutkent",
+   "Korkutreis",
+   "Kültür",
+   "Küçükesat",
+   "Kırkkonaklar",
+   "Kızılay",
+   "Kızılırmak",
+   "Malazgirt",
+   "Maltepe",
+   "Metin Akkuş",
+   "Metin Oktay",
+   "Meşrutiyet",
+   "Mimar Sinan",
+   "Muhsin Ertuğrul",
+   "Murat",
+   "Mustafa Kemal",
+   "Mutlukent",
+   "Mürsel Uluç",
+   "Naci Çakır",
+   "Oran",
+   "Osman Temiz",
+   "Oğuzlar",
+   "Prof. Dr. Ahmet Taner Kışlalı",
+   "Remzi Oğuz Arık",
+   "Sancak",
+   "Sağlık",
+   "Seyranbağları",
+   "Sokullu Mehmet Paşa",
+   "Söğütözü",
+   "Topraklık",
+   "Tınaztepe",
+   "Umut",
+   "Yaşamkent",
+   "Yukarı Bahçelievler",
+   "Yukarı Dikmen",
+   "Yukarı Öveçler",
+   "Yücetepe",
+   "Yıldızevler",
+   "Zafertepe",
+   "Çamlıtepe",
+   "Çankaya",
+   "Çayyolu",
+   "Çiğdem",
+   "Çukurambar",
+   "Ön Cebeci",
+   "Ümit",
+   "Üniversiteler",
+   "İleri",
+   "İlkadım",
+   "İlkbahar",
+   "İlker",
+   "İncesu",
+   "İşçi Blokları",
+   "Şehit Cengiz Karaca",
+   "Şehit Cevdet Özdemir"
+  ],
+  "Çubuk": [
+   "Cumhuriyet",
+   "Esenboğa Merkez"
+  ]
+ },
+ "Antalya": {
+  "Aksu": [
+   "Altıntaş",
+   "Kemerağzı"
+  ],
+  "Alanya": [
+   "Avsallar",
+   "Büyükhasbahçe",
+   "Cikcilli",
+   "Cumhuriyet",
+   "Demirtaş",
+   "Güller Pınarı",
+   "Kadıpaşa",
+   "Kestel",
+   "Keşefli",
+   "Kızlar Pınarı",
+   "Kızılcaşehir",
+   "Mahmutlar",
+   "Oba",
+   "Okurcalar",
+   "Saray",
+   "Sugözü",
+   "Tosmur",
+   "Çarşı",
+   "Çıplaklı"
+  ],
+  "Döşemealtı": [
+   "Altınkale",
+   "Bahçeyaka",
+   "Nebiler",
+   "Tomalar",
+   "Yeniköy",
+   "Yeşilbayır",
+   "Çıplaklı"
+  ],
+  "Elmalı": [
+   "Karyağdı",
+   "Yeni"
+  ],
+  "Finike": [
+   "Kale",
+   "Kum",
+   "Sahilkent",
+   "Yeni",
+   "İskele"
+  ],
+  "Gazipaşa": [
+   "Cumhuriyet",
+   "Koru",
+   "Pazarcı",
+   "İstiklal"
+  ],
+  "Kaş": [
+   "İslamlar"
+  ],
+  "Kemer": [
+   "Arslanbucak",
+   "Göynük",
+   "Kuzdere",
+   "Merkez",
+   "Çamyuva"
+  ],
+  "Kepez": [
+   "Ahatlı",
+   "Aktoprak",
+   "Altıayak",
+   "Altınova Düden",
+   "Ayanoğlu",
+   "Aydoğmuş",
+   "Baraj",
+   "Barış",
+   "Demirel",
+   "Duacı",
+   "Düdenbaşı",
+   "Erenköy",
+   "Esentepe",
+   "Fabrikalar",
+   "Fatih",
+   "Göksu",
+   "Göçerler",
+   "Gülveren",
+   "Güneş",
+   "Habibler",
+   "Kanal",
+   "Kepez",
+   "Kuzeyyaka",
+   "Kültür",
+   "Santral",
+   "Sütçüler",
+   "Teomanpaşa",
+   "Ulus",
+   "Yeni",
+   "Yeşilyurt",
+   "Çamlıbel",
+   "Çankaya",
+   "Ünsal",
+   "Şafak"
+  ],
+  "Konyaaltı": [
+   "Akkuyu",
+   "Altınkum",
+   "Arapsuyu",
+   "Bahtılı",
+   "Gürsu",
+   "Hurma",
+   "Kuşkavağı",
+   "Liman",
+   "Molla Yusuf",
+   "Sarısu",
+   "Toros",
+   "Uluç",
+   "Uncalı",
+   "Öğretmenevleri"
+  ],
+  "Korkuteli": [
+   "Karşıyaka",
+   "Kiremitli",
+   "Yeni",
+   "Yeşilyayla"
+  ],
+  "Kumluca": [
+   "Bağlık",
+   "Merkez",
+   "Yazır",
+   "Yeni"
+  ],
+  "Manavgat": [
+   "Aşağı Pazarcı",
+   "Ilıca",
+   "Kavaklı",
+   "Sarılar",
+   "Side",
+   "Sorgun",
+   "Yayla"
+  ],
+  "Muratpaşa": [
+   "Bahçelievler",
+   "Cumhuriyet",
+   "Deniz",
+   "Dutlubahçe",
+   "Fener",
+   "Gebizli",
+   "Gençlik",
+   "Güzelbağ",
+   "Güzeloba",
+   "Güzeloluk",
+   "Konuksever",
+   "Kızılarık",
+   "Kızıltoprak",
+   "Meltem",
+   "Memurevleri",
+   "Soğuksu",
+   "Tahılpazarı",
+   "Yenigün",
+   "Yeşilbahçe",
+   "Yüksekalan",
+   "Yıldız",
+   "Zerdalilik",
+   "Çaybaşı",
+   "Çağlayan",
+   "Üçgen",
+   "Şirinyalı"
+  ],
+  "Serik": [
+   "Belek",
+   "Kadriye"
+  ]
+ },
+ "Artvin": {
+  "Arhavi": [
+   "Musazade"
+  ]
+ },
+ "Aydın": {
+  "Didim": [
+   "Akbük",
+   "Altınkum",
+   "Efeler",
+   "Hisar",
+   "Mavişehir",
+   "Yeni",
+   "Çamlık"
+  ],
+  "Efeler": [
+   "Adnan Menderes",
+   "Cuma",
+   "Cumhuriyet",
+   "Efeler",
+   "Girne",
+   "Güzelhisar",
+   "Kemer",
+   "Kurtuluş",
+   "Köprülü - Veysipaşa",
+   "Mesudiye",
+   "Meşrutiyet",
+   "Mimar Sinan",
+   "Orta",
+   "Yedi Eylül",
+   "Zafer",
+   "Zeybek",
+   "Zeytinköy"
+  ],
+  "Germencik": [
+   "İstasyon"
+  ],
+  "Kuşadası": [
+   "Bayraklıdede",
+   "Cumhuriyet",
+   "Davutlar",
+   "Değirmendere",
+   "Ege",
+   "Güzelçamlı",
+   "Hacıfeyzullah",
+   "Kadıkalesi",
+   "Kadınlar Denizi",
+   "Karaova",
+   "Soğucak",
+   "Türkmen",
+   "İkiçeşmelik"
+  ],
+  "Köşk": [
+   "Çarşı"
+  ],
+  "Nazilli": [
+   "Yıldıztepe",
+   "İsabeyli",
+   "Şirinevler"
+  ],
+  "Söke": [
+   "Atatürk",
+   "Yenicamii",
+   "Yenikent"
+  ],
+  "İncirliova": [
+   "Sandıklı"
+  ]
+ },
+ "Ağrı": {
+  "Doğubayazıt": [
+   "Yeni"
+  ]
+ },
+ "Balıkesir": {
+  "Altıeylül": [
+   "Altı Eylül",
+   "Bahçelievler",
+   "Dinkçiler",
+   "Gaziosmanpaşa",
+   "Gümüsçesme",
+   "Hasan Basri Çantay",
+   "Kasaplar",
+   "Plevne",
+   "Sütlüce",
+   "Yıldız"
+  ],
+  "Ayvalık": [
+   "Ali Çetinkaya",
+   "Altınova",
+   "Hayrettinpaşa",
+   "Küçükköy",
+   "Mithatpaşa",
+   "Namık Kemal",
+   "Sahil Kent",
+   "Sefa Çamlık"
+  ],
+  "Bandırma": [
+   "100. Yıl",
+   "17 Eylül",
+   "600 Evler",
+   "Dere",
+   "Edincik",
+   "Günaydın",
+   "Hacı Yusuf",
+   "Haydar Çavuş",
+   "Paşabayır",
+   "Paşakent",
+   "Paşakonak",
+   "Paşamescit",
+   "Sunullah",
+   "Yeni",
+   "İhsaniye"
+  ],
+  "Burhaniye": [
+   "Bahçelievler",
+   "Cumhuriyet",
+   "Hacıahmet",
+   "Kocacami",
+   "Pelitköy",
+   "Ören"
+  ],
+  "Edremit": [
+   "Altınkum",
+   "Altınoluk",
+   "Avcılar",
+   "Cennetayağı",
+   "Cumhuriyet",
+   "Güre",
+   "Güre Cumhuriyet",
+   "Hacıtuğrul",
+   "Kızılkeçili",
+   "Sarıkız",
+   "Soğanyemez",
+   "Tahtakuşlar",
+   "Turhanbey",
+   "Çamlıbel",
+   "İkizçay",
+   "İskele",
+   "Şahindere"
+  ],
+  "Erdek": [
+   "Atatürk",
+   "Halitpaşa",
+   "Narlı",
+   "Ocaklar"
+  ],
+  "Gömeç": [
+   "Karaağaç",
+   "Yaya"
+  ],
+  "Gönen": [
+   "100. Yıl",
+   "Kurtuluş",
+   "Malkoç",
+   "Reşadiye",
+   "Rüstem"
+  ],
+  "Karesi": [
+   "Ali Hikmet Paşa",
+   "Atatürk",
+   "Eski Kuyumcular",
+   "Kuva-İ Milliye",
+   "Paşa Alanı",
+   "Yeni",
+   "Çay"
+  ]
+ },
+ "Bartın": {
+  "Merkez": [
+   "Cumhuriyet",
+   "Esentepe",
+   "Gölbucağı",
+   "Karasu",
+   "Kemer Köprü",
+   "Orduyeri",
+   "Tuna"
+  ]
+ },
+ "Batman": {
+  "Merkez": [
+   "Bayındır",
+   "Gap"
+  ]
+ },
+ "Bayburt": {
+  "Merkez": [
+   "Karasakal"
+  ]
+ },
+ "Bilecik": {
+  "Bozüyük": [
+   "Kasımpaşa"
+  ],
+  "Merkez": [
+   "Beşiktaş",
+   "Gazipaşa",
+   "Hürriyet"
+  ]
+ },
+ "Bitlis": {
+  "Merkez": [
+   "Beş Minare"
+  ]
+ },
+ "Bolu": {
+  "Merkez": [
+   "Aktaş",
+   "Alpağut",
+   "Aşağısoku",
+   "Bahçelievler",
+   "Borazanlar",
+   "Dağkent",
+   "Gölyüzü",
+   "Karamanlı",
+   "Karaçayır",
+   "Kültür",
+   "Semerkant",
+   "Tabaklar",
+   "Tepecik",
+   "Yaşamkent",
+   "İhsaniye",
+   "İzzet Baysal"
+  ]
+ },
+ "Burdur": {
+  "Bucak": [
+   "Mehmet Akif",
+   "Onaç"
+  ],
+  "Gölhisar": [
+   "Çeşme"
+  ],
+  "Merkez": [
+   "Armağan İlci",
+   "Atatürk",
+   "Aydınlıkevler",
+   "Bahçelievler",
+   "Bozkurt",
+   "Burç",
+   "Emek",
+   "Fevzi Çakmak",
+   "Konak",
+   "Yeni",
+   "Özgür",
+   "Şirinevler"
+  ]
+ },
+ "Bursa": {
+  "Gemlik": [
+   "Demirsubaşı",
+   "Dr. Ziya Kaya",
+   "Eşref Dinçer",
+   "Hamidiye",
+   "Kumla"
+  ],
+  "Gürsu": [
+   "Zafer"
+  ],
+  "Mudanya": [
+   "Bademli",
+   "Güzelyalı Burgaz",
+   "Güzelyalı Siteler",
+   "Güzelyalı Yalı",
+   "Halitpaşa",
+   "Yeni",
+   "Ömerbey"
+  ],
+  "Nilüfer": [
+   "19 Mayıs",
+   "29 Ekim",
+   "30 Ağustos Zafer",
+   "Altınşehir",
+   "Balat",
+   "Balkan",
+   "Barış",
+   "Beşevler",
+   "Cumhuriyet",
+   "Demirci",
+   "Dumlupınar",
+   "Fethiye",
+   "Görükle",
+   "Kültür",
+   "Minareliçavuş",
+   "İhsaniye"
+  ],
+  "Orhangazi": [
+   "Arapzade",
+   "Tekke"
+  ],
+  "Osmangazi": [
+   "Ahmetpaşa",
+   "Altıparmak",
+   "Demirtaş Cumhuriyet",
+   "Demirtaş Sakarya",
+   "Dikkaldırım",
+   "Hocahasan",
+   "Kavaklı",
+   "Kayıhan",
+   "Maksem",
+   "Ovaakça Santral",
+   "Soğanlı",
+   "Tayakadın",
+   "Çekirge",
+   "Çırpan"
+  ],
+  "Yıldırım": [
+   "Bağlaraltı",
+   "Emirsultan",
+   "Karaağaç",
+   "Karamazak",
+   "Meydancık",
+   "Namazgah",
+   "Umurbey"
+  ]
+ },
+ "Denizli": {
+  "Honaz": [
+   "Yeni"
+  ],
+  "Merkezefendi": [
+   "1200 Evler",
+   "Adalet",
+   "Akkonak",
+   "Bahçelievler",
+   "Bereketler",
+   "Değirmenönü",
+   "Gültepe",
+   "Karahasanlı",
+   "Karaman",
+   "Kayalar",
+   "Mehmet Akif Ersoy",
+   "Merkez Efendi",
+   "Muratdede",
+   "Saraylar",
+   "Selçuk Bey",
+   "Sümer",
+   "Sırakapılar",
+   "Yenişafak",
+   "Çakmak"
+  ],
+  "Pamukkale": [
+   "Asmalıevler",
+   "Atalar",
+   "Deliktaş",
+   "Fatih",
+   "Hürriyet",
+   "Kayıhan",
+   "Kervansaray",
+   "Kuşpınar",
+   "Kınıklı",
+   "Mehmetçik",
+   "Pelitlibağ",
+   "Siteler",
+   "Yunusemre",
+   "Zeytinköy",
+   "İncilipınar",
+   "İstiklal"
+  ],
+  "Sarayköy": [
+   "Aşağı"
+  ],
+  "Çameli": [
+   "Belevi"
+  ]
+ },
+ "Diyarbakır": {
+  "Bağlar": [
+   "Selahattin Eyyubi"
+  ],
+  "Kayapınar": [
+   "Medya",
+   "Talaytepe"
+  ],
+  "Silvan": [
+   "Yüksek"
+  ],
+  "Yenişehir": [
+   "Üçkuyu",
+   "Şehitlik"
+  ]
+ },
+ "Düzce": {
+  "Akçakoca": [
+   "Osmaniye",
+   "Yalı"
+  ],
+  "Merkez": [
+   "Aydınpınar (Cuma)",
+   "Aziziye",
+   "Güzelbahçe",
+   "Kara Hacımusa",
+   "Koçyazı",
+   "Orhangazi",
+   "Yeni",
+   "Çamlıevler",
+   "Çay",
+   "Çiftepınarlar",
+   "Şehit Murat Demir",
+   "Şıralık"
+  ],
+  "Çilimli": [
+   "Yeşiltepe"
+  ]
+ },
+ "Edirne": {
+  "Keşan": [
+   "Mustafa Kemal Paşa",
+   "Yenimuhacir (Cumhuriyet)"
+  ],
+  "Merkez": [
+   "1. Murat",
+   "Abdurrahman",
+   "Babademirtaş",
+   "Barutluk",
+   "Fatih",
+   "Koca Sinan",
+   "Medrese Ali Bey",
+   "Mithat Paşa",
+   "Nişancıpaşa",
+   "Sarıcapaşa",
+   "Talatpaşa",
+   "Çavuşbey",
+   "İstasyon",
+   "Şükrüpaşa"
+  ]
+ },
+ "Elazığ": {
+  "Merkez": [
+   "Olgunlar"
+  ]
+ },
+ "Erzincan": {
+  "Merkez": [
+   "Arslanlı",
+   "Atatürk",
+   "Başbağlar",
+   "Gölcük",
+   "Halitpaşa",
+   "Kızılay",
+   "Mengüceli",
+   "Osmanlı",
+   "Yenimahalle",
+   "İnönü"
+  ]
+ },
+ "Erzurum": {
+  "Aziziye": [
+   "Selçuklu"
+  ],
+  "Palandöken": [
+   "Adnan Menderes",
+   "Yunusemre"
+  ],
+  "Yakutiye": [
+   "Lalapaşa",
+   "Şükrüpaşa"
+  ]
+ },
+ "Eskişehir": {
+  "Odunpazarı": [
+   "71 Evler",
+   "Akarbaşı",
+   "Büyükdere",
+   "Deliklitaş",
+   "Emek",
+   "Gökmeydan",
+   "Gültepe",
+   "Kurtuluş",
+   "Kırmızıtoprak",
+   "Osmangazi",
+   "Sultandere 75. Yıl",
+   "Vadişehir",
+   "Vişnelik",
+   "Yenidoğan",
+   "Yenikent",
+   "Çankaya",
+   "İstiklal"
+  ],
+  "Tepebaşı": [
+   "Aşağı Söğütönü",
+   "Bahçelievler",
+   "Batıkent",
+   "Cumhuriye",
+   "Ertuğrulgazi",
+   "Eskibağlar",
+   "Fatih",
+   "Güllük",
+   "Hacı Ali Bey",
+   "Hacı Seyit",
+   "Hoşnudiye",
+   "Işıklar",
+   "Kumlubel",
+   "Mustafa Kemal Paşa",
+   "Sazova",
+   "Sütlüce",
+   "Tunalı",
+   "Yenibağlar",
+   "Çamlıca",
+   "Ömerağa",
+   "İhsaniye",
+   "Şarhöyük",
+   "Şirintepe"
+  ]
+ },
+ "Gaziantep": {
+  "Şahinbey": [
+   "Bahçelievler",
+   "Bey",
+   "Beştepe",
+   "Binevler",
+   "Bülbülzade",
+   "Durantaş",
+   "Güneykent",
+   "Karataş",
+   "Yeditepe",
+   "İbn-İ Sina"
+  ],
+  "Şehitkamil": [
+   "Atatürk",
+   "Batıkent",
+   "Değirmiçem",
+   "Emek",
+   "Fatih",
+   "Çamlıtepe",
+   "Şehirgösteren"
+  ]
+ },
+ "Giresun": {
+  "Merkez": [
+   "Aksu",
+   "Gedikkaya",
+   "Gemilerçekeği",
+   "Hacımiktat",
+   "Seldeğirmeni"
+  ],
+  "Tirebolu": [
+   "Doğancı"
+  ]
+ },
+ "Hakkari": {
+  "Merkez": [
+   "Berçelan"
+  ]
+ },
+ "Hatay": {
+  "Antakya": [
+   "Esenlik",
+   "Küçükdalyan",
+   "Kışla Saray",
+   "Odabaşı",
+   "Saraykent",
+   "Serinyol",
+   "Zülüflühan",
+   "Ürgen Paşa"
+  ],
+  "Arsuz": [
+   "Karaağaç Konarlı",
+   "Karaağaç Övündük",
+   "Karaağaç Şarkonak",
+   "Madenli",
+   "Nardüzü"
+  ],
+  "Belen": [
+   "İssume"
+  ],
+  "Defne": [
+   "Harbiye",
+   "Turunçlu",
+   "Çekmece"
+  ],
+  "Dörtyol": [
+   "Numune Evler",
+   "Sanayi",
+   "Yeşilköy",
+   "Çaylı"
+  ],
+  "Hassa": [
+   "15 Kasım"
+  ],
+  "Kırıkhan": [
+   "Alsancak"
+  ],
+  "Payas": [
+   "İstiklal"
+  ],
+  "Reyhanlı": [
+   "Cüdeyde"
+  ],
+  "Samandağ": [
+   "Mağaracık",
+   "Çiğdede"
+  ],
+  "İskenderun": [
+   "Barbaros",
+   "Büyükdere",
+   "Cumhuriyet",
+   "Kocatepe",
+   "Meydan",
+   "Modernevler",
+   "Mustafa Kemal",
+   "Pirireis",
+   "Pınarbaşı",
+   "Sakarya",
+   "Süleymaniye",
+   "Yenişehir",
+   "Çay",
+   "İsmet İnönü"
+  ]
+ },
+ "Isparta": {
+  "Eğirdir": [
+   "Altınkum"
+  ],
+  "Merkez": [
+   "Bahçelievler",
+   "Bağlar",
+   "Davraz",
+   "Doğancı",
+   "Emre",
+   "Fatih",
+   "Halıkent",
+   "Hisar",
+   "Hızırbey",
+   "Karaağaç",
+   "Sanayi",
+   "Vatan",
+   "Zafer",
+   "Çünür",
+   "İstiklal"
+  ]
+ },
+ "Kahramanmaraş": {
+  "Dulkadiroğlu": [
+   "Egemenlik",
+   "Yeni Şehir"
+  ],
+  "Onikişubat": [
+   "Maarif"
+  ]
+ },
+ "Karabük": {
+  "Merkez": [
+   "100. Yıl",
+   "Yeşil",
+   "Şirinevler"
+  ],
+  "Safranbolu": [
+   "Barış"
+  ]
+ },
+ "Karaman": {
+  "Merkez": [
+   "Abbas",
+   "Ahmet Yesevi",
+   "Başakşehir",
+   "Hamidiye",
+   "Mahmudiye",
+   "Osmangazi",
+   "Tabduk Emre",
+   "Yunus Emre",
+   "Ziya Gökalp"
+  ]
+ },
+ "Kastamonu": {
+  "Merkez": [
+   "Cebrail",
+   "Kuzeykent",
+   "Mehmet Akif Ersoy",
+   "İnönü"
+  ],
+  "İnebolu": [
+   "Boyran"
+  ]
+ },
+ "Kayseri": {
+  "Develi": [
+   "Aşık Seyrani",
+   "Mustafa Asım Köksal"
+  ],
+  "Kocasinan": [
+   "Barbaros",
+   "Ertuğrul Gazi",
+   "Fevzi Çakmak",
+   "General Emir",
+   "Seyrani",
+   "Yakut",
+   "Yavuzlar",
+   "Yıldızevler",
+   "Zümrüt",
+   "Şeker"
+  ],
+  "Melikgazi": [
+   "Altınoluk",
+   "Cumhuriyet",
+   "Fatih",
+   "Gültepe",
+   "Hunat",
+   "Köşk",
+   "Mimarsinan",
+   "Tacettin Veli",
+   "Tınaztepe",
+   "Yıldırım Beyazıt",
+   "Şirintepe"
+  ],
+  "Talas": [
+   "Bahçelievler",
+   "Harman",
+   "Mevlana",
+   "Yenidoğan"
+  ]
+ },
+ "Kilis": {
+  "Merkez": [
+   "Mehmet Sanlı"
+  ]
+ },
+ "Kocaeli": {
+  "Başiskele": [
+   "Döngel",
+   "Kılıçarslan",
+   "Paşadağ"
+  ],
+  "Darıca": [
+   "Abdi İpekçi",
+   "Piri Reis",
+   "Yalı"
+  ],
+  "Derince": [
+   "Dumlupınar",
+   "Yavuz Sultan",
+   "Çenedağ",
+   "İbnisina"
+  ],
+  "Gebze": [
+   "Cumhuriyet",
+   "Güzeller",
+   "Osman Yılmaz",
+   "Tatlıkuyu",
+   "Yenikent"
+  ],
+  "Gölcük": [
+   "Değirmendere Merkez",
+   "Donanma",
+   "Piyalepaşa",
+   "Topçular",
+   "Yukarı",
+   "Yüzbaşılar",
+   "Çiftlik",
+   "İpek Yolu",
+   "Şehitler"
+  ],
+  "Karamürsel": [
+   "4 Temmuz",
+   "Dereköy",
+   "Ereğli",
+   "Kayacık",
+   "Çamçukur"
+  ],
+  "Kartepe": [
+   "Dumlupınar",
+   "Fatih Sultan Mehmet",
+   "Maşukiye",
+   "Uzunbey",
+   "Uzunçiftlik"
+  ],
+  "Körfez": [
+   "Güney",
+   "Hacı Osman",
+   "Kuzey",
+   "Mimar Sinan",
+   "Yavuz Sultan Selim",
+   "İlimtepe"
+  ],
+  "Çayırova": [
+   "Yeni",
+   "Özgürlük"
+  ],
+  "İzmit": [
+   "Alikahya Atatürk",
+   "Alikahya Fatih",
+   "Ayazma",
+   "Fatih",
+   "Kadıköy",
+   "Karabaş",
+   "Karadenizliler",
+   "Kocatepe",
+   "Kozluk",
+   "Körfez",
+   "Malta",
+   "Turgut",
+   "Veliahmet",
+   "Yahyakaptan",
+   "Yeni",
+   "Yenidoğan",
+   "Ömerağa",
+   "Şirintepe"
+  ]
+ },
+ "Konya": {
+  "Akşehir": [
+   "Yarenler"
+  ],
+  "Ereğli": [
+   "Atakent",
+   "Eti",
+   "Fatih",
+   "Hacı Mütahir",
+   "Hamidiye",
+   "Orhangazi",
+   "Orhaniye",
+   "Toros"
+  ],
+  "Karatay": [
+   "Kalenderhane"
+  ],
+  "Meram": [
+   "Alavardı",
+   "Durunday",
+   "Konevi",
+   "Köyceğiz",
+   "Melikşah",
+   "Yenişehir"
+  ],
+  "Selçuklu": [
+   "Bosna Hersek",
+   "Feritpaşa",
+   "Hocacihan",
+   "Kosova",
+   "Musalla Bağları",
+   "Nişantaş",
+   "Yazır",
+   "İhsaniye"
+  ]
+ },
+ "Kütahya": {
+  "Merkez": [
+   "Bahçelievler",
+   "Dumlupınar",
+   "Kirazpınar",
+   "Meydan",
+   "Pirler",
+   "Saray"
+  ]
+ },
+ "Kırklareli": {
+  "Babaeski": [
+   "Gaziosmanpaşa",
+   "Hamidiye"
+  ],
+  "Lüleburgaz": [
+   "Kocasinan",
+   "Kurtuluş",
+   "Siteler",
+   "Yeni"
+  ],
+  "Merkez": [
+   "İstasyon"
+  ]
+ },
+ "Kırıkkale": {
+  "Merkez": [
+   "Bahçelievler",
+   "Tepebaşı"
+  ],
+  "Yahşihan": [
+   "Hacıbey",
+   "Yenişehir"
+  ]
+ },
+ "Kırşehir": {
+  "Merkez": [
+   "Bağbaşı",
+   "Yenice"
+  ]
+ },
+ "Malatya": {
+  "Battalgazi": [
+   "Halfettin",
+   "Orduzu"
+  ],
+  "Yeşilyurt": [
+   "Cumhuriyet"
+  ]
+ },
+ "Manisa": {
+  "Akhisar": [
+   "Atatürk",
+   "Cumhuriyet",
+   "Hacı İshak",
+   "Hürriyet",
+   "Medar",
+   "Paşa",
+   "Ragıp Bey",
+   "Ulu Camii",
+   "İnönü"
+  ],
+  "Kırkağaç": [
+   "Kadriye"
+  ],
+  "Salihli": [
+   "Eski Cami",
+   "Kurtuluş",
+   "Namık Kemal",
+   "Yörük"
+  ],
+  "Saruhanlı": [
+   "Cengiz Topel"
+  ],
+  "Turgutlu": [
+   "Ergenekon",
+   "Selvilitepe",
+   "Subaşı",
+   "Şehitler"
+  ],
+  "Yunusemre": [
+   "75. Yıl",
+   "Cumhuriyet",
+   "Güzelyurt",
+   "Karaali",
+   "Keçili Köy",
+   "Muradiye",
+   "Uncubozköy"
+  ],
+  "Şehzadeler": [
+   "2. Anafartalar",
+   "Utku"
+  ]
+ },
+ "Mardin": {
+  "Artuklu": [
+   "Nur"
+  ],
+  "Kızıltepe": [
+   "Tepebaşı"
+  ]
+ },
+ "Mersin(İçel)": {
+  "Akdeniz": [
+   "Mahmudiye",
+   "Mesudiye",
+   "Turgutreis",
+   "Yeni"
+  ],
+  "Anamur": [
+   "Güzelyurt"
+  ],
+  "Bozyazı": [
+   "Çubukkoyağı"
+  ],
+  "Erdemli": [
+   "Arpaçbahşiş",
+   "Ayaş",
+   "Kızkalesi",
+   "Limonlu",
+   "Merkez",
+   "Tömük",
+   "Çeşmeli"
+  ],
+  "Mezitli": [
+   "75. Yıl",
+   "Akdeniz",
+   "Atatürk",
+   "Deniz",
+   "Esenbağlar",
+   "Menderes",
+   "Merkez",
+   "Seymenli",
+   "Tece",
+   "Viranşehir",
+   "Yeni"
+  ],
+  "Silifke": [
+   "Atakent",
+   "Gazi",
+   "Taşucu"
+  ],
+  "Tarsus": [
+   "Akşemsettin",
+   "Altaylılar",
+   "Anıt",
+   "Ergenekon",
+   "Kavaklı",
+   "Kırklarsırtı",
+   "Takbaş",
+   "Tozkoparan Zahit",
+   "Yeni Ömerli",
+   "Yeşil",
+   "Yeşilyurt",
+   "Şehitishak",
+   "Şehitmustafa"
+  ],
+  "Toroslar": [
+   "Korukent",
+   "Tozkoparan"
+  ],
+  "Yenişehir": [
+   "50. Yıl",
+   "Akkent",
+   "Bahçelievler",
+   "Cumhuriyet",
+   "Eğriçam",
+   "Fuatmorel",
+   "Hürriyet",
+   "Kuzeykent",
+   "Limonluk",
+   "Menteş",
+   "Pirireis",
+   "Çiftlikköy"
+  ],
+  "Çamlıyayla": [
+   "Sebil"
+  ]
+ },
+ "Muğla": {
+  "Bodrum": [
+   "Akyarlar",
+   "Akçaalan",
+   "Bahçelievler",
+   "Bitez",
+   "Cevat Şakir",
+   "Dirmil",
+   "Eskiçeşme",
+   "Farilya",
+   "Geriş",
+   "Gümbet",
+   "Gümüşlük",
+   "Gündoğan",
+   "Gürece",
+   "Karabağ",
+   "Karaova",
+   "Konacık",
+   "Koyunbaba",
+   "Kumbahçe",
+   "Küçükbük",
+   "Müskebi",
+   "Peksimet",
+   "Torba",
+   "Türkbükü",
+   "Yahşi",
+   "Yalıkavak",
+   "Yeniköy",
+   "Yokuşbaşı",
+   "Çarşı",
+   "Çırkan",
+   "İslamhaneleri"
+  ],
+  "Dalaman": [
+   "Altıntas",
+   "Ege",
+   "Hürriyet",
+   "Karaçalı",
+   "Merkez",
+   "Söğütlüyurt"
+  ],
+  "Datça": [
+   "Datça",
+   "Yaka",
+   "İskele"
+  ],
+  "Fethiye": [
+   "Akarca",
+   "Cami",
+   "Eldirek",
+   "Foça",
+   "Karagedik",
+   "Karagözler",
+   "Karaçulha",
+   "Menteşeoğlu",
+   "Patlangıç",
+   "Pazaryeri",
+   "Taşyaka",
+   "Tuzla",
+   "Yeşilüzümlü",
+   "Çatalarık",
+   "Çiftlik",
+   "Ölüdeniz"
+  ],
+  "Köyceğiz": [
+   "Döğüşbelen",
+   "Gelişim",
+   "Gülpınar",
+   "Toparlar",
+   "Yangı",
+   "Yeni",
+   "Zeytinalanı"
+  ],
+  "Marmaris": [
+   "Armutalan",
+   "Hisarönü",
+   "Orhaniye",
+   "Tepe",
+   "Turunç",
+   "Çıldır",
+   "İçmeler"
+  ],
+  "Menteşe": [
+   "Bayır",
+   "Düğerek",
+   "Emirbeyazıt",
+   "Kafaca",
+   "Karamehmet",
+   "Kiramettin",
+   "Kötekli",
+   "Muslihittin",
+   "Orhaniye",
+   "Ortaköy",
+   "Yenice",
+   "Yeniköy",
+   "Yeşilyurt"
+  ],
+  "Milas": [
+   "Ahmet Çavuş Hayıtlı",
+   "Boğaziçi",
+   "Burgaz",
+   "Emek",
+   "Güllük",
+   "Hacı İlyas",
+   "Kıyıkışlacık",
+   "Menteş",
+   "Ören"
+  ],
+  "Ortaca": [
+   "Atatürk",
+   "Bahçelievler",
+   "Beşköprü",
+   "Dalyan",
+   "Eskiköy",
+   "Karaburun",
+   "Kemaliye",
+   "Mergenli",
+   "Okçular",
+   "Terzialiler",
+   "Çaylı"
+  ],
+  "Ula": [
+   "Ataköy",
+   "Gökova"
+  ],
+  "Yatağan": [
+   "Madenler"
+  ]
+ },
+ "Muş": {
+  "Merkez": [
+   "Hürriyet"
+  ]
+ },
+ "Nevşehir": {
+  "Merkez": [
+   "15 Temmuz",
+   "2000 Evler",
+   "Bekdik",
+   "Esentepe",
+   "Fatih Sultan Mehmet",
+   "Güzelyurt",
+   "Raşitbey",
+   "Uçhisar (Yukarı)",
+   "Yeni"
+  ]
+ },
+ "Niğde": {
+  "Merkez": [
+   "Şahsüleyman"
+  ]
+ },
+ "Ordu": {
+  "Altın": [
+   "Akyazı"
+  ],
+  "Ünye": [
+   "Atatürk"
+  ]
+ },
+ "Osmaniye": {
+  "Düziçi": [
+   "Kurtuluş",
+   "Yeşilova"
+  ],
+  "Kadirli": [
+   "Şehit Kansu Küçükateş",
+   "Şehit Mustafa Yağız"
+  ],
+  "Merkez": [
+   "Fakıuşağı",
+   "Mareşal Fevzi Çakmak",
+   "Raufbey",
+   "Yedi Ocak",
+   "İstiklal"
+  ]
+ },
+ "Rize": {
+  "Merkez": [
+   "Engindere",
+   "Gülbahar",
+   "Tophane",
+   "Çarşı"
+  ],
+  "Pazar": [
+   "Kirazlık"
+  ],
+  "Çayeli": [
+   "Küçüktaşhane",
+   "Yenipazar"
+  ]
+ },
+ "Sakarya": {
+  "Adapazarı": [
+   "Güllük",
+   "Korucuk",
+   "Papuççular",
+   "Tekeler",
+   "Yahyalar",
+   "Yağcılar"
+  ],
+  "Arifiye": [
+   "Arifbey"
+  ],
+  "Erenler": [
+   "Tabakhane"
+  ],
+  "Karasu": [
+   "Yalı"
+  ],
+  "Kocaali": [
+   "Caferiye",
+   "Yalı",
+   "Yayla"
+  ],
+  "Sapanca": [
+   "Gazipaşa",
+   "Kırkpınar Hasanpaşa",
+   "Kırkpınar Soğuksu",
+   "Rüstempasa",
+   "Yeni"
+  ],
+  "Serdivan": [
+   "Bahçelievler",
+   "Beşköprü",
+   "Kemalpaşa",
+   "Vatan",
+   "Yazlık",
+   "İstiklal"
+  ]
+ },
+ "Samsun": {
+  "19 Mayıs": [
+   "Dereköy",
+   "Yükseliş"
+  ],
+  "Atakum": [
+   "Alanlı",
+   "Atatepe",
+   "Balaç",
+   "Beypınar",
+   "Büyükkolpınar",
+   "Büyükoyumca",
+   "Cumhuriyet",
+   "Esenevler",
+   "Güzelyalı",
+   "Körfez",
+   "Küçükkolpınar",
+   "Mevlana",
+   "Mimarsinan",
+   "Yenimahalle",
+   "Yeşildere",
+   "Yeşilyurt",
+   "İncesu Yalı",
+   "İstiklal"
+  ],
+  "Bafra": [
+   "Altınkaya",
+   "Emirefendi",
+   "Fatih",
+   "Gaziosmanpaşa",
+   "Çilhane",
+   "İshaklı",
+   "İsmetpaşa"
+  ],
+  "Canik": [
+   "Hasköy",
+   "Uludağ"
+  ],
+  "Tekkeköy": [
+   "19 Mayıs"
+  ],
+  "Vezirköprü": [
+   "Yeni"
+  ],
+  "İlkadım": [
+   "19 Mayıs",
+   "Bahçelievler",
+   "Baruthane",
+   "Derebahçe",
+   "Derecik",
+   "Kadıköy",
+   "Kale",
+   "Kalkancı",
+   "Karasamsun",
+   "Kılıçdede",
+   "Kışla",
+   "Liman",
+   "Rasathane",
+   "Selahiye",
+   "Tepecik",
+   "Ulugazi",
+   "Yenidoğan",
+   "Zafer",
+   "Çiftlik",
+   "İlyasköy"
+  ]
+ },
+ "Sinop": {
+  "Boyabat": [
+   "Kumluk",
+   "Çamlıca"
+  ],
+  "Gerze": [
+   "19 Mayıs"
+  ],
+  "Merkez": [
+   "Ada",
+   "Gelincik",
+   "Kaleyazısı",
+   "Korucuk",
+   "Yeni",
+   "Zeytinlik",
+   "İncedayı"
+  ]
+ },
+ "Sivas": {
+  "Merkez": [
+   "Kardeşler",
+   "Mehmet Akif Ersoy",
+   "Pulur",
+   "Çarşıbaşı"
+  ]
+ },
+ "Tekirdağ": {
+  "Ergene": [
+   "Sağlık"
+  ],
+  "Marmaraereğlisi": [
+   "Dereağzı",
+   "Yeniçiftlik"
+  ],
+  "Süleymanpaşa": [
+   "100. Yıl",
+   "Altınova",
+   "Atatürk",
+   "Aydoğdu",
+   "Bahçelievler",
+   "Barbaros",
+   "Cumhuriyet",
+   "Değirmenaltı",
+   "Ertuğrul",
+   "Hürriyet",
+   "Karadeniz",
+   "Kumbağ",
+   "Ortacami",
+   "Vatan",
+   "Yavuz",
+   "Çiftlikönü",
+   "Çınarlı"
+  ],
+  "Çorlu": [
+   "Alipaşa",
+   "Esentepe",
+   "Hatip",
+   "Havuzlar",
+   "Hürriyet",
+   "Kazımiye",
+   "Kemalettin",
+   "Muhittin",
+   "Nusratiye",
+   "Reşadiye",
+   "Zafer",
+   "Önerler",
+   "Şeyh Sinan"
+  ],
+  "Şarköy": [
+   "Cumhuriyet"
+  ]
+ },
+ "Tokat": {
+  "Erbaa": [
+   "Yıldırımbeyazıt"
+  ],
+  "Merkez": [
+   "Alipaşa",
+   "Altıyüzevler",
+   "Devegörmez",
+   "Emirseyit (Bahçelievler)",
+   "Esentepe",
+   "Gülbaharhatun",
+   "Güneşli",
+   "Kümbet",
+   "Semerkant",
+   "Topçam",
+   "Yarahmet",
+   "Yeniyurt",
+   "Yeşilırmak"
+  ],
+  "Niksar": [
+   "50. Yıl",
+   "Bahçelievler",
+   "Bağlar",
+   "Bengiler",
+   "Cedit",
+   "Kültür"
+  ],
+  "Pazar": [
+   "Esentepe"
+  ]
+ },
+ "Trabzon": {
+  "Akçaabat": [
+   "Orta",
+   "Söğütlü",
+   "Yaylacık",
+   "Yıldızlı"
+  ],
+  "Ortahisar": [
+   "1 Nolu Bostancı",
+   "3 Nolu Erdoğdu",
+   "Akyazı",
+   "Kurtuluş",
+   "Toklu",
+   "Yeşiltepe"
+  ],
+  "Yomra": [
+   "Kaşüstü"
+  ]
+ },
+ "Uşak": {
+  "Merkez": [
+   "Cumhuriyet",
+   "Kemalöz"
+  ]
+ },
+ "Van": {
+  "İpekyolu": [
+   "Bahçıvan",
+   "Cumhuriyet",
+   "Serhat",
+   "Vali Mithat Bey",
+   "Şerefiye"
+  ]
+ },
+ "Yalova": {
+  "Altınova": [
+   "Tavşanlı (Şehitlik)",
+   "Tokmak (Köy Altı)"
+  ],
+  "Merkez": [
+   "Bahçelievler",
+   "Dere",
+   "Fevzi Çakmak",
+   "İsmet Paşa"
+  ],
+  "Termal": [
+   "Akköy"
+  ],
+  "Çiftlikköy": [
+   "Mehmet Akif Ersoy",
+   "Sahil"
+  ],
+  "Çınarcık": [
+   "Harmanlar",
+   "Karpuzdere",
+   "Kocadere (Yalı)",
+   "Koru (Cumhuriyet)",
+   "Teşvikiye (Karşıyaka)",
+   "Çamlık"
+  ]
+ },
+ "Yozgat": {
+  "Merkez": [
+   "Erdoğan Akdağ",
+   "Çapanoğlu"
+  ],
+  "Sorgun": [
+   "Aydınlıkevler",
+   "Yeşilöz"
+  ]
+ },
+ "Zonguldak": {
+  "Alaplı": [
+   "Aşağıdoğancılar"
+  ],
+  "Ereğli": [
+   "Bağlık",
+   "Belen",
+   "Gülüç (Gülüç)",
+   "Kepez",
+   "Kirmanlı",
+   "Kırmacı",
+   "Müftü",
+   "Sarıkokmaz",
+   "Süleymanlar"
+  ],
+  "Kilimli": [
+   "Hisar Arkası"
+  ],
+  "Kozlu": [
+   "19 Mayıs",
+   "Fatih",
+   "Güney"
+  ],
+  "Merkez": [
+   "Bahçelievler",
+   "Karaelmas",
+   "Meşrutiyet",
+   "Mithatpaşa",
+   "On Temmuz",
+   "Tepebaşı",
+   "Terakki",
+   "Çınartepe",
+   "İncivez"
+  ],
+  "Çaycuma": [
+   "Filyos (Hisarönü)",
+   "Filyos (Kocaali)",
+   "Filyos (Öteyüz)",
+   "Yeni"
+  ]
+ },
+ "Çanakkale": {
+  "Ayvacık": [
+   "Koyunevi",
+   "Küçükkuyu (Gökçetepe)",
+   "Küçükkuyu (Mıhlı)"
+  ],
+  "Biga": [
+   "Sakarya"
+  ],
+  "Ezine": [
+   "Geyikli (Hürriyet)"
+  ],
+  "Gelibolu": [
+   "Camiikebir",
+   "Gazi Süleyman Paşa",
+   "Yazıcızade"
+  ],
+  "Lapseki": [
+   "Cumhuriyet",
+   "Gazi Süleyman Paşa"
+  ],
+  "Merkez": [
+   "Barbaros",
+   "Cevat Paşa",
+   "Erenköy",
+   "Esenler",
+   "Kemalpaşa",
+   "Kepez (Cumhuriyet)",
+   "İsmetpaşa"
+  ]
+ },
+ "Çorum": {
+  "Merkez": [
+   "Ak Kent",
+   "Bahçelievler",
+   "Buharaevler",
+   "Gülabibey",
+   "Kale",
+   "Karakeçili",
+   "Pınarçay",
+   "Ulukavak",
+   "Yavruturna",
+   "Yeniyol",
+   "Çepni",
+   "Üçtutlar"
+  ]
+ },
+ "İstanbul": {
+  "Adalar": [
+   "Heybeliada",
+   "Maden"
+  ],
+  "Arnavutköy": [
+   "Deliklikaya",
+   "Hadımköy",
+   "Karaburun",
+   "Nenehatun",
+   "Taşoluk",
+   "İslambey"
+  ],
+  "Ataşehir": [
+   "Atatürk",
+   "Barbaros",
+   "Esatpaşa",
+   "Fetih",
+   "Kayışdağı",
+   "Küçükbakkalköy",
+   "Mimar Sinan",
+   "Yenişehir",
+   "İnönü",
+   "İçerenköy"
+  ],
+  "Avcılar": [
+   "Ambarlı",
+   "Cihangir",
+   "Denizköşkler",
+   "Gümüşpala",
+   "Merkez",
+   "Mustafa Kemal Paşa",
+   "Tahtakale",
+   "Üniversite"
+  ],
+  "Bahçelievler": [
+   "Bahçelievler",
+   "Hürriyet",
+   "Kocasinan Merkez",
+   "Siyavuşpaşa",
+   "Soğanlı",
+   "Yenibosna Merkez",
+   "Zafer",
+   "Çobançeşme",
+   "Şirinevler"
+  ],
+  "Bakırköy": [
+   "Ataköy 1. Kısım",
+   "Ataköy 3-4-11. Kısım",
+   "Ataköy 7-8-9-10. Kısım",
+   "Basınköy",
+   "Cevizlik",
+   "Kartaltepe",
+   "Osmaniye",
+   "Sakızağacı",
+   "Yenimahalle",
+   "Yeşilköy",
+   "Yeşilyurt",
+   "Zeytinlik",
+   "Zuhuratbaba",
+   "Şenlikköy"
+  ],
+  "Bayrampaşa": [
+   "Altıntepsi",
+   "Cevatpaşa",
+   "Kartaltepe",
+   "Kocatepe",
+   "Muratpaşa",
+   "Terazidere",
+   "Yenidoğan",
+   "Yıldırım",
+   "İsmet Paşa"
+  ],
+  "Bağcılar": [
+   "15 Temmuz",
+   "Bağlar",
+   "Güneşli",
+   "Hürriyet",
+   "Kirazlı",
+   "Mahmutbey",
+   "Yıldıztepe",
+   "Çınar"
+  ],
+  "Başakşehir": [
+   "Bahçeşehir 1. Kısım",
+   "Bahçeşehir 2. Kısım",
+   "Başak",
+   "Başakşehir",
+   "Kayabaşı"
+  ],
+  "Beykoz": [
+   "Acarlar",
+   "Göksu",
+   "Gümüşsuyu",
+   "Kavacık",
+   "Merkez",
+   "Soğuksu",
+   "Yeni Mahalle",
+   "Çengeldere",
+   "Çiftlik",
+   "Çubuklu",
+   "Örnekköy",
+   "İncirköy"
+  ],
+  "Beylikdüzü": [
+   "Adnan Kahveci",
+   "Barış",
+   "Büyükşehir",
+   "Cumhuriyet",
+   "Dereağzı",
+   "Gürpınar",
+   "Kavaklı",
+   "Marmara",
+   "Sahil",
+   "Yakuplu"
+  ],
+  "Beyoğlu": [
+   "Asmalı Mescit",
+   "Bereketzade",
+   "Camiikebir",
+   "Cihangir",
+   "Firuzağa",
+   "Gümüşsuyu",
+   "Hacıahmet",
+   "Halıcıoğlu",
+   "Kadımehmet Efendi",
+   "Kamer Hatun",
+   "Kaptanpaşa",
+   "Katip Mustafa Çelebi",
+   "Kemankeş Karamustafa Paşa",
+   "Keçeci Piri",
+   "Kocatepe",
+   "Kulaksız",
+   "Kuloğlu",
+   "Küçük Piyale",
+   "Kılıçali Paşa",
+   "Müeyyetzade",
+   "Piri Paşa",
+   "Piyalepaşa",
+   "Pürtelaş Hasan Efendi",
+   "Sururi Mehmet Efendi",
+   "Sütlüce",
+   "Tomtom",
+   "Yahya Kahya",
+   "Yenişehir",
+   "Çatma Mescit",
+   "Ömer Avni",
+   "Şahkulu"
+  ],
+  "Beşiktaş": [
+   "Abbasağa",
+   "Akat",
+   "Arnavutköy",
+   "Balmumcu",
+   "Bebek",
+   "Cihannüma",
+   "Dikilitaş",
+   "Etiler",
+   "Gayrettepe",
+   "Konaklar",
+   "Kültür",
+   "Levazım",
+   "Levent",
+   "Mecidiye",
+   "Muradiye",
+   "Nisbetiye",
+   "Ortaköy",
+   "Sinanpaşa",
+   "Türkali",
+   "Ulus",
+   "Vişnezade",
+   "Yıldız"
+  ],
+  "Büyükçekmece": [
+   "Atatürk",
+   "Celaliye",
+   "Cumhuriyet",
+   "Ekinoba",
+   "Fatih",
+   "Güzelce",
+   "Kamiloba",
+   "Kumburgaz",
+   "Mimaroba",
+   "Murat Çeşme",
+   "Pınartepe",
+   "Sinanoba",
+   "Ulus",
+   "Yenimahalle"
+  ],
+  "Esenler": [
+   "15 Temmuz",
+   "Birlik",
+   "Kazım Karabekir",
+   "Menderes",
+   "Mimar Sinan",
+   "Nine Hatun",
+   "Oruçreis"
+  ],
+  "Esenyurt": [
+   "Akevler",
+   "Akçaburgaz",
+   "Ardıçlı",
+   "Aşık Veysel",
+   "Barbaros Hayrettin Paşa",
+   "Bağlarçeşme",
+   "Cumhuriyet",
+   "Esenkent",
+   "Gökevler",
+   "Güzelyurt",
+   "Hürriyet",
+   "Koza",
+   "Mehmet Akif Ersoy",
+   "Mehterçeşme",
+   "Mevlana",
+   "Namık Kemal",
+   "Necip Fazıl Kısakürek",
+   "Orhan Gazi",
+   "Piri Reis",
+   "Pınar",
+   "Sultaniye",
+   "Süleymaniye",
+   "Talatpaşa",
+   "Turgut Özal",
+   "Yeşilkent",
+   "Yunus Emre",
+   "Zafer",
+   "Çınar",
+   "Üçevler",
+   "İncirtepe",
+   "İnönü"
+  ],
+  "Eyüpsultan": [
+   "Alibeyköy",
+   "Düğmeciler",
+   "Göktürk Merkez",
+   "Güzeltepe",
+   "Karadolap",
+   "Merkez",
+   "Mimar Sinan",
+   "Mithatpaşa",
+   "Topçular",
+   "Yeşilpınar",
+   "Çırçır"
+  ],
+  "Fatih": [
+   "Aksaray",
+   "Akşemsettin",
+   "Ayvansaray",
+   "Balat",
+   "Cerrahpaşa",
+   "Cibali",
+   "Derviş Ali",
+   "Haseki Sultan",
+   "Koca Mustafapaşa",
+   "Mevlanakapı",
+   "Molla Gürani",
+   "Seyyid Ömer",
+   "Silivrikapı",
+   "Sümbül Efendi",
+   "Topkapı",
+   "Yavuz Sultan Selim",
+   "İskenderpaşa",
+   "Şehremini"
+  ],
+  "Gaziosmanpaşa": [
+   "Barbaros Hayrettinpaşa",
+   "Karadeniz",
+   "Karayolları",
+   "Kazım Karabekir"
+  ],
+  "Güngören": [
+   "Abdurrahman Nafiz Gürman",
+   "Akıncılar",
+   "Gençosman",
+   "Güven",
+   "Haznedar",
+   "Mareşal Çakmak",
+   "Mehmet Nesih Özmen",
+   "Merkez",
+   "Tozkoparan"
+  ],
+  "Kadıköy": [
+   "19 Mayıs",
+   "Acıbadem",
+   "Bostancı",
+   "Caddebostan",
+   "Caferağa",
+   "Dumlupınar",
+   "Erenköy",
+   "Fenerbahçe",
+   "Feneryolu",
+   "Fikirtepe",
+   "Göztepe",
+   "Hasanpaşa",
+   "Kozyatağı",
+   "Merdivenköy",
+   "Osmanağa",
+   "Rasimpaşa",
+   "Sahrayı Cedit",
+   "Suadiye",
+   "Zühtüpaşa"
+  ],
+  "Kartal": [
+   "Atalar",
+   "Cevizli",
+   "Cumhuriyet",
+   "Esentepe",
+   "Hürriyet",
+   "Karlıktepe",
+   "Kordonboyu",
+   "Orhantepe",
+   "Orta",
+   "Petroliş",
+   "Soğanlık Yeni",
+   "Uğur Mumcu",
+   "Yakacık Çarşı",
+   "Yunus"
+  ],
+  "Kağıthane": [
+   "Emniyet Evleri",
+   "Gültepe",
+   "Gürsel",
+   "Hamidiye",
+   "Harmantepe",
+   "Hürriyet",
+   "Merkez",
+   "Nurtepe",
+   "Ortabayır",
+   "Seyrantepe",
+   "Sultan Selim",
+   "Talatpaşa",
+   "Telsizler",
+   "Yahya Kemal",
+   "Yeşilce",
+   "Çağlayan",
+   "Çeliktepe",
+   "Şirintepe"
+  ],
+  "Küçükçekmece": [
+   "Atakent",
+   "Atatürk",
+   "Cennet",
+   "Cumhuriyet",
+   "Fatih",
+   "Gültepe",
+   "Halkalı Merkez",
+   "Kanarya",
+   "Kartaltepe",
+   "Kemalpaşa",
+   "Sultan Murat",
+   "Tevfik Bey",
+   "Yeni Mahalle",
+   "Yeşilova",
+   "İnönü",
+   "İstasyon"
+  ],
+  "Maltepe": [
+   "Altayçeşme",
+   "Altıntepe",
+   "Aydınevler",
+   "Bağlarbaşı",
+   "Cevizli",
+   "Fındıklı",
+   "Gülensu",
+   "Küçükyalı",
+   "Yalı",
+   "Zümrütevler",
+   "Çınar",
+   "İdealtepe"
+  ],
+  "Pendik": [
+   "Ahmet Yesevi",
+   "Bahçelievler",
+   "Batı",
+   "Doğu",
+   "Dumlupınar",
+   "Esenyalı",
+   "Fatih",
+   "Güzelyalı",
+   "Kaynarca",
+   "Kurtköy",
+   "Yayalar",
+   "Yenişehir"
+  ],
+  "Sancaktepe": [
+   "Abdurrahmangazi",
+   "Atatürk",
+   "Emek",
+   "Eyüp Sultan",
+   "Fatih",
+   "Kemal Türkler",
+   "Meclis",
+   "Veysel Karani",
+   "Yunus Emre"
+  ],
+  "Sarıyer": [
+   "Ayazağa",
+   "Bahçeköy Kemer",
+   "Bahçeköy Merkez",
+   "Bahçeköy Yeni",
+   "Büyükdere",
+   "Cumhuriyet",
+   "Darüşşafaka",
+   "Ferahevler",
+   "Huzur",
+   "Kireçburnu",
+   "Maden",
+   "Maslak",
+   "Poligon",
+   "Ptt Evleri",
+   "Reşitpaşa",
+   "Sarıyer Merkez",
+   "Tarabya",
+   "Uskumruköy",
+   "Yeniköy",
+   "Zekeriyaköy",
+   "Çamlıtepe",
+   "İstinye"
+  ],
+  "Silivri": [
+   "Alibey",
+   "Balaban",
+   "Cumhuriyet",
+   "Gümüşyaka",
+   "Ortaköy",
+   "Piri Mehmet Paşa",
+   "Selimpaşa",
+   "Semizkumlar",
+   "Yeni"
+  ],
+  "Sultanbeyli": [
+   "Adil",
+   "Akşemsettin",
+   "Fatih",
+   "Mimar Sinan"
+  ],
+  "Sultangazi": [
+   "50. Yıl",
+   "Eski Habipler"
+  ],
+  "Tuzla": [
+   "Aydınlı",
+   "Cami",
+   "Orta",
+   "Postane",
+   "Yayla",
+   "İstasyon"
+  ],
+  "Zeytinburnu": [
+   "Beştelsiz",
+   "Gökalp",
+   "Kazlıçeşme",
+   "Maltepe",
+   "Merkezefendi",
+   "Nuripaşa",
+   "Seyitnizam",
+   "Sümer",
+   "Veliefendi",
+   "Yenidoğan",
+   "Yeşiltepe",
+   "Çırpıcı"
+  ],
+  "Çekmeköy": [
+   "Alemdağ",
+   "Aydınlar",
+   "Cumhuriyet",
+   "Ekşioğlu",
+   "Güngören",
+   "Hamidiye",
+   "Mehmet Akif",
+   "Merkez",
+   "Mimar Sinan",
+   "Nişantepe",
+   "Sultançiftliği",
+   "Taşdelen",
+   "Çamlık"
+  ],
+  "Ümraniye": [
+   "Armağanevler",
+   "Atakent",
+   "Atatürk",
+   "Aşağı Dudullu",
+   "Esenevler",
+   "Esenşehir",
+   "Fatih Sultan Mehmet",
+   "Finanskent",
+   "Huzur",
+   "Mehmet Akif",
+   "Namık Kemal",
+   "Parseller",
+   "Site",
+   "Tantavi",
+   "Tatlısu",
+   "Yamanevler",
+   "Yukarı Dudullu",
+   "Çakmak",
+   "Çamlık",
+   "İstiklal"
+  ],
+  "Üsküdar": [
+   "Acıbadem",
+   "Ahmediye",
+   "Altunizade",
+   "Aziz Mahmut Hüdayi",
+   "Bahçelievler",
+   "Barbaros",
+   "Bulgurlu",
+   "Burhaniye",
+   "Cumhuriyet",
+   "Ferah",
+   "Güzeltepe",
+   "Kuzguncuk",
+   "Mimar Sinan",
+   "Murat Reis",
+   "Salacak",
+   "Selami Ali",
+   "Selimiye",
+   "Sultantepe",
+   "Valide-i Atik",
+   "Yavuztürk",
+   "Zeynep Kamil",
+   "Çengelköy",
+   "Ünalan",
+   "İcadiye"
+  ],
+  "Şile": [
+   "Ahmetli",
+   "Balibey",
+   "Karacaköy",
+   "İmrendere"
+  ],
+  "Şişli": [
+   "19 Mayıs",
+   "Bozkurt",
+   "Cumhuriyet",
+   "Duatepe",
+   "Ergenekon",
+   "Esentepe",
+   "Eskişehir",
+   "Feriköy",
+   "Fulya",
+   "Gülbahar",
+   "Halaskargazi",
+   "Halide Edip Adıvar",
+   "Harbiye",
+   "Kuştepe",
+   "Mahmut Şevket Paşa",
+   "Mecidiyeköy",
+   "Merkez",
+   "Meşrutiyet",
+   "Paşa",
+   "Teşvikiye",
+   "Yayla",
+   "İnönü",
+   "İzzet Paşa"
+  ]
+ },
+ "İzmir": {
+  "Balçova": [
+   "Eğitim",
+   "Fevzi Çakmak",
+   "Korutürk",
+   "Onur",
+   "Teleferik",
+   "Çetin Emeç"
+  ],
+  "Bayraklı": [
+   "75. Yıl",
+   "Adalet",
+   "Alpaslan",
+   "Bayraklı",
+   "Cengizhan",
+   "Fuat Edip Baksı",
+   "Mansuroğlu",
+   "Muhittin Erener",
+   "Onur",
+   "Osmangazi",
+   "Postacılar",
+   "R. Şevket İnce",
+   "Soğukkuyu",
+   "Tepekule",
+   "Çiçek"
+  ],
+  "Bergama": [
+   "Ayvatlar",
+   "Fatih",
+   "Maltepe",
+   "Turabey"
+  ],
+  "Bornova": [
+   "Atatürk",
+   "Doğanlar",
+   "Ergene",
+   "Erzene",
+   "Evka 3",
+   "Evka 4",
+   "Kazımdirik",
+   "Koşukavak",
+   "Kızılay",
+   "Meriç",
+   "Mevlana",
+   "Rafet Paşa",
+   "Yeşilova",
+   "Çınar",
+   "İnönü"
+  ],
+  "Buca": [
+   "Adatepe",
+   "Akıncılar",
+   "Atatürk",
+   "Buca Koop.",
+   "Efeler",
+   "Fırat",
+   "Hürriyet",
+   "Kozağaç",
+   "Kuruçeşme",
+   "Laleli",
+   "Mustafa Kemal",
+   "Vali Rahmi Bey",
+   "Yaylacık",
+   "Yeşilbağlar",
+   "Yiğitler",
+   "Yıldız",
+   "Çamlıkule",
+   "İnkılap"
+  ],
+  "Dikili": [
+   "Bademli",
+   "Gazipaşa",
+   "Salimbey",
+   "Çandarlı"
+  ],
+  "Foça": [
+   "Atatürk",
+   "Fatih",
+   "Fevzi Çakmak",
+   "Fevzipaşa",
+   "Hacıveli",
+   "Mustafa Kemal Atatürk",
+   "Yenibağarası"
+  ],
+  "Gaziemir": [
+   "Atıfbey",
+   "Dokuz Eylül",
+   "Emrez",
+   "Fatih",
+   "Gazi",
+   "Gazikent",
+   "Irmak",
+   "Yeşil"
+  ],
+  "Güzelbahçe": [
+   "Kahramandere",
+   "Mustafa Kemal Paşa",
+   "Yelki"
+  ],
+  "Karabağlar": [
+   "Adnan Süvari",
+   "Arap Hasan",
+   "Bahar",
+   "Bahçelievler",
+   "Basın Sitesi",
+   "Bozyaka",
+   "Doğanay",
+   "Esenlik",
+   "Fahrettin Altay",
+   "General Kazım Özalp",
+   "Gülyaka",
+   "Günaltay",
+   "Karabağlar",
+   "Kazım Karabekir",
+   "Maliyeciler",
+   "Metin Oktay",
+   "Muammer Akar",
+   "Poligon",
+   "Refet Bele",
+   "Reis",
+   "Sevgi",
+   "Umut",
+   "Uzundere",
+   "Vatan",
+   "Yaşar Kemal",
+   "Üçkuyular"
+  ],
+  "Karaburun": [
+   "İskele"
+  ],
+  "Karşıyaka": [
+   "Aksoy",
+   "Alaybey",
+   "Atakent",
+   "Bahariye",
+   "Bahçelievler",
+   "Bostanlı",
+   "Dedebaşı",
+   "Donanmacı",
+   "Fikri Altay",
+   "Goncalar",
+   "Latife Hanım",
+   "Mavişehir",
+   "Mustafa Kemal",
+   "Nergiz",
+   "Tuna",
+   "Yalı",
+   "Zübeyde Hanım",
+   "Örnekköy",
+   "İnönü",
+   "Şemikler"
+  ],
+  "Kemalpaşa": [
+   "Çiniliköy"
+  ],
+  "Konak": [
+   "Alsancak",
+   "Altıntaş",
+   "Atilla",
+   "Barbaros",
+   "Göztepe",
+   "Güneşli",
+   "Halkapınar",
+   "Kahramanlar",
+   "Kemal Reis",
+   "Kocatepe",
+   "Kültür",
+   "Kılıç Reis",
+   "Mehmet Ali Akman",
+   "Mersinli",
+   "Mimar Sinan",
+   "Mithatpaşa",
+   "Murat Reis",
+   "Piri Reis",
+   "Turgut Reis",
+   "Çankaya",
+   "Çınarlı"
+  ],
+  "Kınık": [
+   "Fatih"
+  ],
+  "Menderes": [
+   "Ahmetbeyli",
+   "Altıntepe",
+   "Cüneytbey",
+   "Gümüldür İnönü",
+   "Kemalpaşa",
+   "Çakaltepe",
+   "Çukuraltı",
+   "Özdere Cumhuriyet"
+  ],
+  "Menemen": [
+   "29 Ekim",
+   "30 Ağustos",
+   "85. Yıl Cumhuriyet",
+   "Ahıhıdır",
+   "Atatürk",
+   "Bağcılar",
+   "Esatpaşa",
+   "Gazi Mustafa Kemal",
+   "Kasımpaşa",
+   "Kazımpaşa",
+   "Mermerli",
+   "Ulus",
+   "Uğur Mumcu",
+   "İnönü",
+   "İsmet İnönü",
+   "İstiklal"
+  ],
+  "Narlıdere": [
+   "2. İnönü",
+   "Huzur",
+   "Ilıca",
+   "Çamtepe",
+   "Çatalkaya"
+  ],
+  "Seferihisar": [
+   "Atatürk",
+   "Camikebir",
+   "Cumhuriyet",
+   "Hıdırlık",
+   "Sığacık",
+   "Tepecik",
+   "Turabiye",
+   "Ulamış"
+  ],
+  "Selçuk": [
+   "14 Mayıs"
+  ],
+  "Tire": [
+   "Atatürk"
+  ],
+  "Torbalı": [
+   "Ayrancılar",
+   "Cumhuriyet",
+   "Fevzi Çakmak",
+   "Torbalı",
+   "İnönü"
+  ],
+  "Urla": [
+   "Atatürk",
+   "Balıklıova",
+   "Denizli",
+   "Gülbahçe",
+   "Kalabak",
+   "Kuşçular",
+   "M. Fevzi Çakmak",
+   "Yenikent",
+   "Zeytinalanı",
+   "Çamlıçay",
+   "Özbek",
+   "İskele"
+  ],
+  "Çeşme": [
+   "Altınyunus",
+   "Dalyan",
+   "Germiyan",
+   "Musalla",
+   "Çiftlik",
+   "Üniversite",
+   "Şifne"
+  ],
+  "Çiğli": [
+   "Atatürk",
+   "Ataşehir",
+   "Balatçık",
+   "Cumhuriyet",
+   "Esentepe",
+   "Evka - 2",
+   "Evka-5",
+   "Güzeltepe",
+   "Harmandalı Gazi Mustafa Kemal Atatürk",
+   "Köyiçi",
+   "Küçük Çiğli",
+   "Yeni Mahalle",
+   "İnönü"
+  ],
+  "Ödemiş": [
+   "Akıncılar",
+   "Atatürk",
+   "Bengisu",
+   "Hürriyet",
+   "Mimar Sinan",
+   "Süleyman Demirel",
+   "Zafer"
+  ]
+ },
+ "Şanlıurfa": {
+  "Haliliye": [
+   "Konuklu",
+   "Şair Nabi"
+  ],
+  "Karaköprü": [
+   "Akbayır",
+   "Mehmetçik"
+  ]
+ }
+}
