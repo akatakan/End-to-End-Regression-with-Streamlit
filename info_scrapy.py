@@ -1,149 +1,241 @@
-from pprint import pprint
-import joblib as jb
-import requests
-from bs4 import BeautifulSoup
-from time import sleep
-from random import uniform
+"""Ilan detaylarini kazir ve emlak.csv uretir.
+
+Duzeltilen hatalar:
+  * `while step < len(house_links)-1` -> son link hep atlaniyordu
+  * `except` blogunda `step` artmiyordu -> kalici hata veren tek bir linkte
+    SONSUZ DONGU
+  * CSV sadece en sonda yaziliyordu -> saatler suren kazimada tek cokme
+    her seyi goturuyordu
+  * `proxies = {"http": <liste>}` -> requests scheme basina tek string bekler;
+    o proxy yapilandirmasi hic calismamisti (ve proxy-list.txt repoda yoktu)
+  * fiyattaki para birimi dusuruluyordu -> GBP/EUR ilanlar TL gibi kaydediliyordu
+  * "1.100 m2" ham birakiliyordu -> pandas onu 1.1 olarak okuyordu
+  * "Yapinin Durumu" bazi ilanlarda yapi turunu ("Betonarme") veriyor, o deger
+    Sifir/Ikinci El sutununa karisiyordu
+  * `Apartment Type` toplaniyor ama CSV'ye yazilmiyordu
+
+Ham kayitlar JSONL'e yazilir (`listings.jsonl`), CSV oradan uretilir. Boylece
+kazimayi tekrarlamadan alan cikarimini degistirebilirsin.
+
+Kullanim:
+    python info_scrapy.py --links links.json          # kazi (kaldigi yerden)
+    python info_scrapy.py --csv-only                  # JSONL -> emlak.csv
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
 import pandas as pd
-import numpy as np
+from bs4 import BeautifulSoup
 
-with open("proxy-list.txt","r") as f:
-    text = f.readlines()
-    text = [str(link).strip("\n") for link in text]
-    
-proxies = {
-    'http': text
+from scrape_common import (
+    append_jsonl,
+    build_session,
+    done_urls,
+    parse_price,
+    parse_tr_number,
+    polite_get,
+    read_jsonl,
+    robots_check,
+    sleep_between,
+)
+
+# "Yapinin Durumu" alani iki farkli sey dondurebiliyor. Sadece bunlar sahiplik
+# bilgisidir; digerleri (Betonarme, Celik, Ahsap...) yapi turudur ve ayri
+# sutuna yaziliyor.
+HAND_VALUES = {"Sıfır", "İkinci El", "Yapım Aşamasında"}
+
+DETAIL_LABELS = {
+    "Bulunduğu Kat": "floor",
+    "Bina Yaşı": "house_age",
+    "Isınma Tipi": "heater_type",
+    "Eşya Durumu": "furniture",
+    "Banyo Sayısı": "bath_count",
+    "Yapının Durumu": "building_state",
+    "Yakıt Tipi": "heater_fuel",
+    "Konut Tipi": "apartment_type",
 }
 
-user_agent = {
-    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.0.0 Safari/537.36"
-}
-
-house_links = jb.load("linkler-1-420.joblib")
-prices= []
-house_types = []
-house_sizes = []
-house_ages = []
-apartment_types = []
-heater_types = []
-floors = []
-with_furnitures = []
-bath_counts = []
-hand_nums = []
-heater_fuels = []
-cities = []
-towns = []
-neighborhoods = []
-room_types = []
+CSV_COLUMNS = [
+    "City", "Town", "Neighborhood", "Apartment Type", "House Type", "House Age",
+    "House Size", "Room Count", "Floor", "Furniture", "Bathroom Count", "Hand",
+    "Building Structure", "Heater Type", "Heater Fuel", "Currency", "Price", "url",
+]
 
 
-def get_info(soup):
-    
-    
-    ul = soup.find("ul",class_="short-info-list")
-    if ul:
-        short_list = ul.find_all('li')
-    price = soup.find("p",class_ = "fz24-text price").text.strip().split()[0]
-    info_list = soup.find_all("span",class_="txt")
-    
-    city = short_list[0].text.strip()
-    town = short_list[1].text.strip()
-    neighborhood = short_list[2].text.strip()
-    house_type = short_list[4].text.strip()
-    room_type = short_list[5].text.strip()
-    house_size = short_list[6].text.strip() 
-    price = int(price.replace('.',''))
-    
-    floor = None
-    house_age = None
-    heater_type = None
-    with_furniture = None
-    bath_count = None
-    hand_num = None
-    heater_fuel = None
-    apartment_type = None
-    
-    
-    for i in range(len(info_list)):
-        if info_list[i].text == "Bulunduğu Kat":
-            floor = info_list[i].find_next_sibling('span').text
-        elif info_list[i].text == "Bina Yaşı":
-            house_age = info_list[i].find_next_sibling('span').text.split(' ')[0]
-        elif info_list[i].text == "Isınma Tipi":
-            heater_type = info_list[i].find_next_sibling('span').text
-        elif info_list[i].text == "Eşya Durumu":
-            with_furniture = True if info_list[i].find_next_sibling("span").text == "Eşyalı" else False
-        elif info_list[i].text == "Banyo Sayısı":
-            bath_count = info_list[i].find_next_sibling("span").text
-        elif info_list[i].text == "Yapının Durumu":
-           hand_num = info_list[i].find_next_sibling("span").text
-        elif info_list[i].text == "Yakıt Tipi":
-            heater_fuel = info_list[i].find_next_sibling("span").text
-        elif info_list[i].text == "Konut Tipi":
-            apartment_type = info_list[i].find_next_sibling("span").text
-    
-    prices.append(price)
-    house_types.append(house_type)
-    room_types.append(room_type)
-    house_sizes.append(house_size)
-    floors.append(floor)
-    house_ages.append(house_age)
-    heater_types.append(heater_type)
-    with_furnitures.append(with_furniture)
-    bath_counts.append(bath_count)
-    hand_nums.append(hand_num)
-    heater_fuels.append(heater_fuel)
-    apartment_types.append(apartment_type)
-    cities.append(city)
-    towns.append(town)
-    neighborhoods.append(neighborhood)
-    
-step = 0
-while step < len(house_links)-1:
-    try:
-        print(f"{step+1}.link")
-        r = requests.get(house_links[step],headers=user_agent,proxies=proxies)
-        print(r.status_code)
-        if r.status_code == 429:
-            print("Timeout...")
-            sleep(uniform(120,140))
+def parse_listing(html: bytes, url: str) -> dict | None:
+    """Ilan sayfasindan ham alanlari cikarir. Eksik alan hata degildir."""
+    soup = BeautifulSoup(html, "lxml")
+
+    if soup.find("p", class_="stale-warning__text"):
+        return None  # yayindan kaldirilmis ilan
+
+    ul = soup.find("ul", class_="short-info-list")
+    if not ul:
+        return None
+
+    short_info = [li.get_text(strip=True) for li in ul.find_all("li")]
+
+    price_tag = soup.find("p", class_="fz24-text price")
+    amount, currency = parse_price(price_tag.get_text(strip=True) if price_tag else None)
+
+    # Etiket -> deger. Konuma degil etikete bakiyoruz; sayfa duzeni degisirse
+    # yanlis sutuna veri yazmak yerine alan bos kalir.
+    details: dict[str, str] = {}
+    for label_tag in soup.find_all("span", class_="txt"):
+        key = DETAIL_LABELS.get(label_tag.get_text(strip=True))
+        if not key:
             continue
-        
-        soup = BeautifulSoup(r.content,'lxml')
-        if soup.find('p',class_="stale-warning__text"):
-            step +=1
-            continue
-        ul = soup.find("ul",class_="short-info-list")
-        if not ul:
-            step+=1
-            continue
-        get_info(soup)
-        print(f"{step+1}. kazındı.")
-        step+=1
-        sleep(uniform(1,5))
-    except Exception as e:
-        print(e)
-        print("Bir hata oluştu...")
-    
-data = {
-    "City": cities,
-    "Town": towns,
-    "Neighborhood": neighborhoods,
-    "Apartment Type": apartment_types,
-    "House Type": house_types,
-    "House Age": house_ages,
-    "House Size": house_sizes,
-    "Room Count": room_types,
-    "Floor": floors,
-    "Furniture": with_furnitures,
-    "Bathroom Count": bath_counts,
-    "Hand": hand_nums,
-    "Heater Type":heater_types,
-    "Heater Fuel":heater_fuels,
-    "Price":prices
-}
+        value_tag = label_tag.find_next_sibling("span")
+        if value_tag is not None:
+            details[key] = value_tag.get_text(strip=True)
+
+    return {
+        "url": url,
+        "price": amount,
+        "currency": currency,
+        # Ham liste de saklaniyor: alan cikarimi degisirse yeniden kazimaya
+        # gerek kalmadan JSONL'den tureyebilir.
+        "short_info": short_info,
+        "details": details,
+    }
 
 
-df = pd.DataFrame(data)
+def to_row(record: dict) -> dict:
+    """Ham JSONL kaydi -> CSV satiri."""
+    short = record.get("short_info") or []
+    d = record.get("details") or {}
 
-df.to_csv("emlak.csv",index=False)
+    def at(i: int) -> str | None:
+        return short[i] if len(short) > i else None
+
+    building_state = d.get("building_state")
+    hand = building_state if building_state in HAND_VALUES else None
+    structure = None if building_state in HAND_VALUES else building_state
+
+    furniture = d.get("furniture")
+    if furniture == "Eşyalı":
+        furniture_flag: bool | None = True
+    elif furniture == "Eşyasız":
+        furniture_flag = False
+    else:
+        furniture_flag = None
+
+    age_raw = d.get("house_age")
+    house_age = 0.0 if age_raw == "Sıfır" else parse_tr_number(age_raw)
+
+    return {
+        "City": at(0),
+        "Town": at(1),
+        "Neighborhood": at(2),
+        "Apartment Type": d.get("apartment_type"),
+        "House Type": at(4),
+        "House Age": house_age,
+        # parse_tr_number: "1.100 m2" -> 1100.0 (eskiden 1.1 oluyordu)
+        "House Size": parse_tr_number(at(6)),
+        "Room Count": at(5),
+        "Floor": d.get("floor"),
+        "Furniture": furniture_flag,
+        "Bathroom Count": parse_tr_number(d.get("bath_count")),
+        "Hand": hand,
+        "Building Structure": structure,
+        "Heater Type": d.get("heater_type"),
+        "Heater Fuel": d.get("heater_fuel"),
+        "Currency": record.get("currency"),
+        "Price": record.get("price"),
+        "url": record.get("url"),
+    }
+
+
+def write_csv(jsonl: Path, csv_path: Path) -> None:
+    rows = [to_row(r) for r in read_jsonl(jsonl)]
+    if not rows:
+        print("JSONL bos, CSV yazilmadi")
+        return
+    df = pd.DataFrame(rows, columns=CSV_COLUMNS)
+    before = len(df)
+    df = df.drop_duplicates(subset="url").dropna(subset=["Price"])
+    df.to_csv(csv_path, index=False, encoding="utf-8")
+    print(f"{csv_path}: {len(df)} satir ({before - len(df)} tekrar/fiyatsiz atildi)")
+    if "Currency" in df:
+        counts = df["Currency"].value_counts(dropna=False).to_dict()
+        print(f"  para birimi dagilimi: {counts}")
+
+
+def load_links(path: Path) -> list[str]:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict):          # link_scrap.py'nin state dosyasi
+        return list(data.get("urls", []))
+    return list(data)                   # duz liste de kabul
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--links", default="links.json")
+    ap.add_argument("--jsonl", default="listings.jsonl")
+    ap.add_argument("--csv", default="emlak.csv")
+    ap.add_argument("--csv-only", action="store_true",
+                    help="kazima yapma, mevcut JSONL'den CSV uret")
+    ap.add_argument("--limit", type=int, default=None, help="en fazla N ilan kaz")
+    ap.add_argument("--min-delay", type=float, default=1.0)
+    ap.add_argument("--max-delay", type=float, default=5.0)
+    ap.add_argument("--proxy", default=None, help="tek proxy URL'i (http://host:port)")
+    ap.add_argument("--ignore-robots", action="store_true")
+    args = ap.parse_args()
+
+    jsonl = Path(args.jsonl)
+
+    if not args.csv_only:
+        links = load_links(Path(args.links))
+        already = done_urls(jsonl)
+        todo = [u for u in links if u not in already]
+        if args.limit:
+            todo = todo[:args.limit]
+        print(f"{len(links)} link | {len(already)} zaten kazinmis | {len(todo)} kalan")
+
+        if todo:
+            allowed, delay = robots_check("https://www.hepsiemlak.com", todo[0])
+            print(f"robots.txt: {'izinli' if allowed else 'YASAK'}"
+                  + (f", crawl-delay {delay} sn" if delay else ""))
+            if not allowed and not args.ignore_robots:
+                print("robots.txt bu yolu yasakliyor - duruluyor "
+                      "(--ignore-robots ile gecebilirsin).")
+                return
+            if delay:
+                args.min_delay = max(args.min_delay, delay)
+                args.max_delay = max(args.max_delay, delay * 2)
+
+        session = build_session(proxy=args.proxy)
+        stale = failed = 0
+        try:
+            for i, url in enumerate(todo, 1):
+                print(f"[{i}/{len(todo)}] {url}")
+                response = polite_get(session, url, log=print)
+
+                # Her yol dongunun ILERLEMESIYLE bitiyor. Eski kodda hata
+                # durumunda `step` artmadigi icin ayni link sonsuz deneniyordu.
+                if response is None:
+                    failed += 1
+                else:
+                    record = parse_listing(response.content, url)
+                    if record is None:
+                        stale += 1
+                        # Yayindan kalkmis ilani da isaretle ki --resume'da
+                        # tekrar denenmesin.
+                        append_jsonl(jsonl, {"url": url, "stale": True})
+                    else:
+                        append_jsonl(jsonl, record)
+
+                sleep_between(args.min_delay, args.max_delay)
+        except KeyboardInterrupt:
+            print("\nkullanici durdurdu - kayitlar diskte, --resume ile devam eder")
+
+        print(f"\nbitti: {stale} yayindan kalkmis, {failed} alinamadi")
+
+    write_csv(jsonl, Path(args.csv))
+
+
+if __name__ == "__main__":
+    main()
