@@ -1,0 +1,5 @@
+# Sadece veri kazima scriptleri icin (link_scrap.py, info_scrapy.py, test_scraper.py)
+beautifulsoup4>=4.12
+lxml>=5.2
+requests>=2.32
+pandas>=2.2

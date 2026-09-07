@@ -1,137 +1,157 @@
+"""Kiralik ev fiyati tahmin arayuzu."""
+from __future__ import annotations
+
 import json
-import streamlit as st
-import pandas as pd
+from pathlib import Path
+
 import joblib
-import numpy as np
+import pandas as pd
+import streamlit as st
 
-data_path = "data.json"
-model_pipeline = joblib.load('model_pipeline.pkl')
+from features import RAW_COLUMNS
 
-with open(data_path,'r',encoding='utf8') as j:
-     data = json.loads(j.read())
-     
-city_names = [city['name'] for city in data]
-city = st.sidebar.selectbox('Şehir', city_names)
+MODEL_PATH = Path("model_pipeline.pkl")
+META_PATH = Path("metrics.json")
+LOCATION_PATH = Path("locations.json")
 
-selected_city = next(city_data for city_data in data if city_data['name'] == city)
-county_names = [county['name'] for county in selected_city['counties']]
-county = st.sidebar.selectbox('İlçe', county_names)
-
-neighborhood_names = []
-for county_data in selected_city['counties']:
-    if county_data['name'] == county:
-        for district in county_data['districts']:
-            neighborhood_names.extend(neighborhood['name'] for neighborhood in district['neighborhoods'])
-neighborhood = st.sidebar.selectbox('Mahalle', neighborhood_names)
+st.set_page_config(page_title="Kiralik Ev Fiyati Tahmini", page_icon="🏠", layout="wide")
 
 
-apartment_types = ['Bina',
- 'Bungalov',
- 'Daire',
- 'Dağ Evi',
- 'Köy Evi',
- 'Köşk',
- 'Loft Daire',
- 'Müstakil Ev',
- 'Prefabrik',
- 'Residence',
- 'Villa',
- 'Yalı',
- 'Yazlık']
+# Streamlit her widget degisiminde scripti bastan calistirir. Cache olmadan
+# 1,2 MB model + 13,6 MB JSON her tiklamada yeniden yukleniyordu.
+@st.cache_resource
+def load_model():
+    return joblib.load(MODEL_PATH)
 
-apartment_type = st.sidebar.selectbox('Yapı Tipi', apartment_types)
-age=st.sidebar.number_input('Bina Yaşı',0,300,0)
-house_size = st.sidebar.number_input('Evin Alanı',50,1000,50)
 
-room_counts = ['3 + 1', '4 + 1', '1 + 1', '2 + 1', '5 + 1', '5 + 2', '7 + 1',
-       '6 + 1', '8 + 1', '6 + 2', '10 + 2', '8 + 2', '3 + 2', '7 + 2',
-       '4 + 2', '1 + 0', '2 + 0', '2 + 2', '6 + 3', '11 + 2', '9 + 3',
-       '6 + 6', '6 + 0', '9 + 1', '25 + 2', '4 + 8', '1 + 3', '3 + 3',
-       '3 + 0', '4 + 4', '5 + 3', '1 + 2', '41 + 1', '9 + 2', '10 + 1',
-       '11 + 1', '4 + 0', '22 + 2', '4 + 3', '10 + 4', '11 + 3',
-       '18 + 18']
+@st.cache_data
+def load_meta() -> dict:
+    return json.loads(META_PATH.read_text(encoding="utf-8"))
 
-room_count = st.sidebar.selectbox('Oda Sayısı', room_counts)
-floors= ['Ara Kat', '13. Kat', '4. Kat', 'Çatı Katı', '5. Kat',
-       'Bahçe Katı', 'Yüksek Giriş', 'Müstakil', '21 ve üzeri', '3. Kat',
-       '1. Kat', '2. Kat', '7. Kat', 'Kot 1', 'Kot 2', 'Giriş Katı',
-       'Zemin', '8. Kat', '6. Kat', '9. Kat', 'Teras Katı', 'Kot 3',
-       '10. Kat', '18. Kat', '12. Kat', '11. Kat', '14. Kat', '15. Kat',
-       'Villa Katı', 'Bodrum', '17. Kat', '19. Kat', '20. Kat', '16. Kat']
-floor = st.sidebar.selectbox('Bulunduğu Kat', floors)
-furniture = st.sidebar.selectbox("Eşyalı mı?",["Evet","Hayır"])
-bath_count = st.sidebar.number_input('Banyo Sayısı',0,50,0)
-hand = st.sidebar.selectbox("Kaçıncı Sahibi",["Sıfır","İkinci El"])
-heater_types = [
- 'Kombi',
- 'Klima',
- 'Merkezi',
- 'Fancoil Ünitesi',
- 'Yerden Isıtma',
- 'Isıtma Yok',
- 'Kat Kaloriferi',
- 'Soba',
- 'Doğalgaz Sobası',
- 'Güneş Enerjisi',
- 'Jeotermal Isıtma',
- 'Isı Pompası',
- 'VRV']
 
-heater_type = st.sidebar.selectbox("Isıtma Tipi",heater_types)
-heater_fuels = ['Doğalgaz', 'Elektrik', 'Akaryakıt', 'Kömür']
-heater_fuel = st.sidebar.selectbox("Isıtma Yakıtı",heater_fuels)
+@st.cache_data
+def load_locations() -> dict:
+    """Egitim verisindeki il/ilce/mahalle agaci (train.py uretiyor).
 
+    Repodaki data.json'i kullanmiyoruz: oradaki isimler BUYUK HARF ve
+    egitim verisiyle eslesmiyor -> model her konumu "gorulmemis" sayiyordu.
+    """
+    return json.loads(LOCATION_PATH.read_text(encoding="utf-8"))
+
+
+model = load_model()
+meta = load_meta()
+locations = load_locations()
+
+choices = meta["ui_choices"]
+ranges = meta["ui_ranges"]
+defaults = meta["ui_defaults"]
+
+
+def _idx(col: str) -> int:
+    """Varsayilan olarak egitim verisindeki en sik degeri sec."""
+    try:
+        return choices[col].index(defaults[col])
+    except (KeyError, ValueError):
+        return 0
+
+# --- konum -----------------------------------------------------------------
+city = st.sidebar.selectbox("Şehir", sorted(locations))
+county = st.sidebar.selectbox("İlçe", sorted(locations[city]))
+neighborhood = st.sidebar.selectbox("Mahalle", locations[city][county])
+st.sidebar.caption("Listede sadece eğitim verisinde geçen konumlar var.")
+
+# --- ev ozellikleri --------------------------------------------------------
+# Secenekler egitim verisinden geliyor: arayuz ile model bir daha ayrisamaz.
+house_type = st.sidebar.selectbox("Yapı Tipi", choices["House Type"], index=_idx("House Type"))
+room_count = st.sidebar.selectbox("Oda Sayısı", choices["Room Count"], index=_idx("Room Count"))
+floor = st.sidebar.selectbox("Bulunduğu Kat", choices["Floor"], index=_idx("Floor"))
+heater_type = st.sidebar.selectbox("Isıtma Tipi", choices["Heater Type"], index=_idx("Heater Type"))
+heater_fuel = st.sidebar.selectbox("Isıtma Yakıtı", choices["Heater Fuel"], index=_idx("Heater Fuel"))
+
+age = st.sidebar.number_input(
+    "Bina Yaşı", 0, int(ranges["House Age"]["max"]), int(ranges["House Age"]["median"])
+)
+house_size = st.sidebar.number_input(
+    "Evin Alanı (m²)", 1, int(ranges["House Size"]["max"]),
+    int(ranges["House Size"]["median"])
+)
+bath_count = st.sidebar.number_input(
+    "Banyo Sayısı", 1, int(ranges["Bathroom Count"]["max"]), 1
+)
+furniture = st.sidebar.selectbox("Eşyalı mı?", ["Hayır", "Evet"])
+hand = st.sidebar.selectbox("Kaçıncı Sahibi", ["İkinci El", "Sıfır"])
+
+# --- ozet ------------------------------------------------------------------
 st.title("Kiralık Ev Fiyatı Tahmini")
-
 st.header("Tahmin Edilmesi İstenen Ev Bilgileri", divider="red")
 
-st.header("")
-
 col1, col2, col3, col4 = st.columns(4)
-
 with col1:
-       st.write(f"İl: {city}")
-       st.write(f"Bina Yaşı: {age}")
-       st.write(f"Eşyalı: {furniture}")
-       st.write(f"Yakıt Tipi: {heater_fuel}")
+    st.write(f"**İl:** {city}")
+    st.write(f"**Bina Yaşı:** {age}")
+    st.write(f"**Eşyalı:** {furniture}")
 with col2:
-       st.write(f"İlçe: {county}")
-       st.write(f"Evin Alanı: {house_size}")
-       st.write(f"Banyo Sayısı: {bath_count}")
+    st.write(f"**İlçe:** {county}")
+    st.write(f"**Alan:** {house_size} m²")
+    st.write(f"**Banyo:** {bath_count}")
 with col3:
-       st.write(f"Mahalle: {neighborhood}")
-       st.write(f"Oda Sayısı: {room_count}")
-       st.write(f"Kaçıncı Sahibi: {hand}")
+    st.write(f"**Mahalle:** {neighborhood}")
+    st.write(f"**Oda Sayısı:** {room_count}")
+    st.write(f"**Sahiplik:** {hand}")
 with col4:
-       st.write(f"Yapı Tipi: {apartment_type}")
-       st.write(f"Kat: {floor}")
-       st.write(f"Isıtma Tipi: {heater_type}")
+    st.write(f"**Yapı Tipi:** {house_type}")
+    st.write(f"**Kat:** {floor}")
+    st.write(f"**Isıtma:** {heater_type} / {heater_fuel}")
 
-st.header("",divider="red")
+st.header("", divider="red")
 
-data = {
-       "City":[city],
-       "Town":[county],
-       "Neighborhood":[neighborhood],
-       "House Type": [apartment_type],
-       "House Age": [age],
-       "House Size": [house_size],
-       "Room Count": [room_count],
-       "Floor": [floor],
-       "Furniture":[furniture],
-       "Bathroom Count":[bath_count],
-       "Hand":[hand],
-       "Heater Type": [heater_type],
-       "Heater Fuel": [heater_fuel]
-}
+row = pd.DataFrame([{
+    "City": city,
+    "Town": county,
+    "Neighborhood": neighborhood,
+    "House Type": house_type,
+    "House Age": age,
+    "House Size": house_size,
+    "Room Count": room_count,
+    "Floor": floor,
+    "Furniture": furniture,
+    "Bathroom Count": bath_count,
+    "Hand": hand,
+    "Heater Type": heater_type,
+    "Heater Fuel": heater_fuel,
+}])[RAW_COLUMNS]
 
-df = pd.DataFrame(data)
+if st.button("Tahmin Et", type="primary"):
+    pred = float(model.predict(row)[0])
 
-placeholder = st.empty()
+    # Nokta tahmini tek basina yaniltici; test setindeki medyan mutlak yuzde
+    # hatasini bant olarak gosteriyoruz.
+    medape = meta["metrics"]["catboost_in_range"]["MedAPE%"] / 100
+    low, high = pred * (1 - medape), pred * (1 + medape)
 
-if st.button("Tahmin Et"):
-       pred = model_pipeline.predict(df)
-       if pred:
-              st.header(f"Evin Kirası: {pred[0]:.2f}")
-       else:
-              st.header("Öngörülen değer bulunamadı veya yanlış bir türde.")
+    st.subheader(f"Tahmini Kira: {pred:,.0f} TL".replace(",", "."))
+    st.caption(
+        f"Olası aralık: {low:,.0f} – {high:,.0f} TL".replace(",", ".")
+        + f"  (test setinde tahminlerin yarısı ±%{medape * 100:.0f} içinde)"
+    )
+
+    bounds = meta["price_bounds_train"]
+    if not (bounds["low"] <= pred <= bounds["high"]):
+        st.warning(
+            f"Tahmin, modelin eğitildiği {bounds['low']:,.0f}–{bounds['high']:,.0f} TL "
+            "aralığının dışında; bu değere güvenme.".replace(",", ".")
+        )
+
+with st.expander("Model hakkında"):
+    m = meta["metrics"]["catboost_in_range"]
+    st.write(
+        f"Eğitim: {meta['rows_train']:,} ilan · Test: {meta['rows_test']:,} ilan · "
+        f"{meta['trained_at'][:10]}".replace(",", ".")
+    )
+    st.write(
+        f"Test seti (eğitim aralığı içi): MAPE %{m['MAPE%']:.1f} · "
+        f"MedAPE %{m['MedAPE%']:.1f} · R² {m['R2']:.3f} · "
+        f"tahminlerin %{m['within20%']:.0f}'i gerçek değerin ±%20 bandında"
+    )
+    st.write("Veri kaynağı: hepsiemlak kiralık ilanları (tek seferlik kazıma).")
